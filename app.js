@@ -4,8 +4,8 @@ const port = 3000;
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
-const mongoose = require("mongoose");
-const User = require('./modules/user');
+// const mongoose = require("mongoose");
+// const User = require('./modules/user');
 
 app.use(express.static('public'));
 app.set("view engine", "ejs");

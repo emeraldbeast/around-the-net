@@ -25,12 +25,12 @@
         <ul id="navLinks"
             class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 shadow-lg
              md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
-            <li>
+            <!-- <li>
                 <a onclick="event.preventDefault(); document.getElementById('players').scrollIntoView({ behavior: 'smooth' });"
                     class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
                     Players
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a onclick="event.preventDefault(); document.getElementById('owners').scrollIntoView({ behavior: 'smooth' });"
                     class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
@@ -57,9 +57,9 @@
 
             <div class="text-center mb-12">
                 <img src="/images/around-the-net-logo.png" alt="Around the Net Logo"
-                    class="w-[300px] md:w-[400px] lg:w-[500px] drop-shadow-lg" >
+                    class="w-[300px] md:w-[400px] lg:w-[500px] drop-shadow-lg">
             </div>
-             <!-- <div class="bg-zinc-700 text-white flex-grow flex flex-col justify-center items-center px-6 py-10">
+            <!-- <div class="bg-zinc-700 text-white flex-grow flex flex-col justify-center items-center px-6 py-10">
 
     <div class="text-center mb-12">
       <h1 class="text-6xl font-extrabold tracking-tight drop-shadow-lg">
@@ -112,7 +112,7 @@
 
             <!-- Register Button -->
             <div class="mt-12 flex justify-center">
-                <a href="#"
+                <a href="https://docs.google.com/forms/d/1vnW51iD2A-OgWUjv5ga01tjEqh7Z5rRULUFrHRR8dpU" target="_blank"
                     class="bg-red-500 hover:bg-red-600 text-white text-lg font-semibold py-3 px-8 rounded transition">
                     Register Now!!
                 </a>
@@ -122,148 +122,68 @@
 
     <hr class="border-t-4 border-gray-400 w-full">
 
-    <div id="players" class="w-full bg-white py-10 px-8">
-        <!-- Title -->
-        <div class="players-text text-4xl font-bold mb-6 text-center">
-            <h1>Players</h1>
-        </div>
-
-        <!-- Category A -->
-        <div class="mb-6 border-b border-zinc-300 pb-4">
-            <button onclick="toggleCategory('A')"
-                class="w-full text-left text-xl font-semibold text-zinc-800 flex justify-between items-center">
-                List A - Members of the BITS Goa Table Tennis Team
-                <span id="icon-A" class="text-xl">+</span>
-            </button>
-            <div id="category-A" class="mt-4 hidden flex flex-wrap justify-center gap-6">
-                <div class="player-card w-64 p-4 bg-zinc-800 rounded-lg">
-                    <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                        <img class="w-full h-full object-cover"
-                            src="https://apicms.thestar.com.my/uploads/images/2023/09/27/2306275.jpg" alt="Ma Long">
-                    </div>
-                    <h1 class="text-white text-center mt-2">Ma Long</h1>
-                    <h3 class="text-zinc-500 text-center">ma.long@gmail.com</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- Category B -->
-        <div class="mb-6 border-b border-zinc-300 pb-4">
-            <button onclick="toggleCategory('B')"
-                class="w-full text-left text-xl font-semibold text-zinc-800 flex justify-between items-center">
-                List B - Members of the Probation Team
-                <span id="icon-B" class="text-xl">+</span>
-            </button>
-            <div id="category-B" class="mt-4 hidden flex flex-wrap justify-center gap-6">
-                <div class="player-card w-64 p-4 bg-zinc-800 rounded-lg">
-                    <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                        <img class="w-full h-full object-cover"
-                            src="https://tse1.mm.bing.net/th/id/OIP.cfySDtSdlbbMqg3QxobrIwHaFo" alt="Zhang Jike">
-                    </div>
-                    <h1 class="text-white text-center mt-2">Zhang Jike</h1>
-                    <h3 class="text-zinc-500 text-center">zhangj@gmail.com</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- Category C -->
-        <div class="mb-6 border-b border-zinc-300 pb-4">
-            <button onclick="toggleCategory('C')"
-                class="w-full text-left text-xl font-semibold text-zinc-800 flex justify-between items-center">
-                List C - Players who have played atleast one tournament
-                <span id="icon-C" class="text-xl">+</span>
-            </button>
-            <div id="category-C" class="mt-4 hidden flex flex-wrap justify-center gap-6">
-                <div class="player-card w-64 p-4 bg-zinc-800 rounded-lg">
-                    <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                        <img class="w-full h-full object-cover"
-                            src="https://tse3.mm.bing.net/th/id/OIP.yxIjc3hDUAE_5l4_vsNIhwHaEK" alt="Xu Xin">
-                    </div>
-                    <h1 class="text-white text-center mt-2">Xu Xin</h1>
-                    <h3 class="text-zinc-500 text-center">xu.xin@gmail.com</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- Category D -->
-        <div class="mb-6 border-b border-zinc-300 pb-4">
-            <button onclick="toggleCategory('D')"
-                class="w-full text-left text-xl font-semibold text-zinc-800 flex justify-between items-center">
-                List D - Players who are starting afresh
-                <span id="icon-D" class="text-xl">+</span>
-            </button>
-            <div id="category-D" class="mt-4 hidden flex flex-wrap justify-center gap-6">
-                <div class="player-card w-64 p-4 bg-zinc-800 rounded-lg">
-                    <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                        <img class="w-full h-full object-cover"
-                            src="https://www.thestatesman.com/wp-content/uploads/2020/01/534a986542dad9127802ca902cfa5ae3.jpg"
-                            alt="Harimoto Tomokazu">
-                    </div>
-                    <h1 class="text-white text-center mt-2">Harimoto Tomokazu</h1>
-                    <h3 class="text-zinc-500 text-center">harimotot@gmail.com</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <hr class="border-t-4 border-gray-400 w-full">
-
     <div id="owners" class="w-full bg-zinc-900 py-10 px-8">
-        <div class="players-text text-4xl text-yellow-600 font-bold mb-10">
+        <div class="players-text text-4xl text-yellow-600 font-bold mb-10 text-center">
             <h1>Teams</h1>
         </div>
-        <div class="flex flex-wrap flex-row gap-6">
-            <div class="player-card w-64 p-4 bg-zinc-700 rounded-lg mb-5">
-                <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                    <img class="w-full h-full object-cover"
-                        src="https://apicms.thestar.com.my/uploads/images/2023/09/27/2306275.jpg">
-                </div>
-                <h1 class="text-white text-center mt-2">
-                    Ma Long
-                </h1>
-                <h3 class="text-zinc-500 text-center">
-                    ma.long@gmail.com
-                </h3>
-                <h5 class="text-yellow-600 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quisquam,
-                    iste consequuntur! Harum impedit sit perspiciatis pariatur provident assumenda nemo tenetur. Ipsum
-                    illum
-                    atque molestiae nam rem perferendis blanditiis iusto ad?</h5>
+
+        <div class="grid gap-8 justify-items-center"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FAhmedabad_SG_Pipers_6d67464c1f.png&w=640&q=75"
+                    alt="Ahmedabad SG Pipers" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">Ahmedabad SG Pipers</h2>
             </div>
-            <div class="player-card w-64 p-4 bg-zinc-700 rounded-lg mb-5">
-                <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                    <img class="w-full h-full object-cover"
-                        src="https://tse1.mm.bing.net/th/id/OIP.cfySDtSdlbbMqg3QxobrIwHaFo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                </div>
-                <h1 class="text-white text-center mt-2">
-                    Zhang Jike
-                </h1>
-                <h3 class="text-zinc-500 text-center">
-                    zhangj@gmail.com
-                </h3>
-                <h5 class="text-yellow-600 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quisquam,
-                    iste consequuntur! Harum impedit sit perspiciatis pariatur provident assumenda nemo tenetur. Ipsum
-                    illum
-                    atque molestiae nam rem perferendis blanditiis iusto ad?</h5>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDabang_Delhi_T_T_C_f65b845603.png&w=640&q=75"
+                    alt="Dabang Delhi T.T.C." class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">Dabang Delhi T.T.C.</h2>
             </div>
-            <div class="player-card w-64 p-4 bg-zinc-700 rounded-lg mb-5">
-                <div class="player-image w-full h-48 rounded-lg overflow-hidden">
-                    <img class="w-full h-full object-cover"
-                        src="https://tse3.mm.bing.net/th/id/OIP.yxIjc3hDUAE_5l4_vsNIhwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                </div>
-                <h1 class="text-white text-center mt-2">
-                    Xu Xin
-                </h1>
-                <h3 class="text-zinc-500 text-center">
-                    xu.xin@gmail.com
-                </h3>
-                <h5 class="text-yellow-600 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quisquam,
-                    iste consequuntur! Harum impedit sit perspiciatis pariatur provident assumenda nemo tenetur. Ipsum
-                    illum
-                    atque molestiae nam rem perferendis blanditiis iusto ad?</h5>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDempo_Goa_Challengers_2_4f4ca14b88.png&w=640&q=75"
+                    alt="Dempo Goa Challengers" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">Dempo Goa Challengers</h2>
+            </div>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FJaipur_Patriots_a2d2ae68e2.png&w=640&q=75"
+                    alt="Jaipur Patriots" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">Jaipur Patriots</h2>
+            </div>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FKolkata_Thunder_Blades_779f7cc584.png&w=640&q=75"
+                    alt="Kolkata Thunder Blades" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">Kolkata Thunder Blades</h2>
+            </div>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FPune_Jaguars_0f95943b31.png&w=640&q=75"
+                    alt="PBG Pune Jaguars" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">PBG Pune Jaguars</h2>
+            </div>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2Fstanleys_chennai_lion_white_with_stroke_391771c2d6.png&w=640&q=75"
+                    alt="Stanley's Chennai Lions" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">Stanley's Chennai Lions</h2>
+            </div>
+
+            <div
+                class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FU_Mumba_TT_e31b087694.png&w=640&q=75"
+                    alt="U Mumba TT" class="w-[200px] h-[200px] object-contain mb-2">
+                <h2 class="text-white text-center text-base font-semibold">U Mumba TT</h2>
             </div>
         </div>
     </div>
