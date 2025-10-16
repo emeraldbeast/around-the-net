@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <%= team.name %> | Team Details
     </title>
@@ -14,22 +15,23 @@
 
 <body class="bg-zinc-900 font-sans">
     <div
-        class="max-w-xl mx-auto p-6 bg-gradient-to-br from-zinc-700 via-zinc-600 to-red-50 rounded-lg shadow-lg mt-10 ring-2 ring-red-500">
-        <img src="<%= team.logo %>" alt="<%= team.name %> Logo"
-            class="w-40 h-40 rounded-full shadow-md border-4 border-red-500 mx-auto mb-4" />
+        class="max-w-3xl mx-auto p-4 sm:p-6 bg-gradient-to-br from-zinc-700 via-zinc-600 to-red-50 rounded-lg shadow-lg mt-10 ring-2 ring-red-500">
 
-        <h1 class="text-3xl font-bold text-center text-white mb-4">
+        <img src="<%= team.logo %>" alt="<%= team.name %> Logo"
+            class="w-32 sm:w-40 h-auto rounded-full shadow-md border-4 border-red-500 mx-auto mb-4" />
+
+        <h1 class="text-2xl sm:text-3xl font-bold text-center text-white mb-4">
             <%= team.name %>
         </h1>
 
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-white">
-            <div class="bg-yellow-600 text-white p-4 rounded-md shadow-md w-full md:w-1/2 text-center">
+        <div class="flex flex-col gap-4 text-white">
+            <div class="bg-yellow-600 text-white p-4 rounded-md shadow-md w-full text-center">
                 <p class="text-lg font-bold">
                     <%= team.owner %>
                 </p>
                 <p class="text-sm font-medium">Owner</p>
             </div>
-            <div class="bg-yellow-600 text-white p-4 rounded-md shadow-md w-full md:w-1/2 text-center">
+            <div class="bg-yellow-600 text-white p-4 rounded-md shadow-md w-full text-center">
                 <p class="text-lg font-bold">
                     <%= team.captain %>
                 </p>
@@ -40,23 +42,13 @@
         <hr class="my-6 border-t border-gray-400" />
 
         <div
-            class="flex flex-row justify-center gap-8 mt-6 bg-yellow-100/40 backdrop-blur-sm p-4 rounded-md shadow-sm border border-yellow-300">
-            <div class="flex flex-col items-center gap-4">
-                <% team.players.slice(0, Math.ceil(team.players.length / 2)).forEach(player=> { %>
-                    <div
-                        class="bg-yellow-200/60 backdrop-blur-sm px-4 py-2 rounded-md text-center text-gray-800 font-medium shadow border border-yellow-300">
-                        <%= player %>
-                    </div>
-                    <% }) %>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-                <% team.players.slice(Math.ceil(team.players.length / 2)).forEach(player=> { %>
-                    <div
-                        class="bg-yellow-200/60 backdrop-blur-sm px-4 py-2 rounded-md text-center text-gray-800 font-medium shadow border border-yellow-300">
-                        <%= player %>
-                    </div>
-                    <% }) %>
-            </div>
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 bg-yellow-100/40 backdrop-blur-sm p-4 rounded-md shadow-sm border border-yellow-300">
+            <% team.players.forEach(player=> { %>
+                <div
+                    class="max-w-[220px] w-full bg-yellow-200/60 backdrop-blur-sm px-4 py-2 rounded-md text-center text-gray-800 font-medium shadow border border-yellow-300 mx-auto">
+                    <%= player %>
+                </div>
+                <% }) %>
         </div>
     </div>
 
