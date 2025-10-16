@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= team.name %> | Team Details
+    </title>
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/004/785/425/original/table-tennis-rackets-and-ball-vector.jpg"
+        type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-900 font-sans">
+    <div
+        class="max-w-xl mx-auto p-6 bg-gradient-to-br from-zinc-700 via-zinc-600 to-red-50 rounded-lg shadow-lg mt-10 ring-2 ring-red-500">
+        <img src="<%= team.logo %>" alt="<%= team.name %> Logo"
+            class="w-40 h-40 rounded-full shadow-md border-4 border-red-500 mx-auto mb-4" />
+
+        <h1 class="text-3xl font-bold text-center text-white mb-4">
+            <%= team.name %>
+        </h1>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-white">
+            <div class="bg-yellow-600 text-white p-4 rounded-md shadow-md w-full md:w-1/2 text-center">
+                <p class="text-lg font-bold">
+                    <%= team.owner %>
+                </p>
+                <p class="text-sm font-medium">Owner</p>
+            </div>
+            <div class="bg-yellow-600 text-white p-4 rounded-md shadow-md w-full md:w-1/2 text-center">
+                <p class="text-lg font-bold">
+                    <%= team.captain %>
+                </p>
+                <p class="text-sm font-medium">Captain</p>
+            </div>
+        </div>
+
+        <hr class="my-6 border-t border-gray-400" />
+
+        <div
+            class="flex flex-row justify-center gap-8 mt-6 bg-yellow-100/40 backdrop-blur-sm p-4 rounded-md shadow-sm border border-yellow-300">
+            <div class="flex flex-col items-center gap-4">
+                <% team.players.slice(0, Math.ceil(team.players.length / 2)).forEach(player=> { %>
+                    <div
+                        class="bg-yellow-200/60 backdrop-blur-sm px-4 py-2 rounded-md text-center text-gray-800 font-medium shadow border border-yellow-300">
+                        <%= player %>
+                    </div>
+                    <% }) %>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <% team.players.slice(Math.ceil(team.players.length / 2)).forEach(player=> { %>
+                    <div
+                        class="bg-yellow-200/60 backdrop-blur-sm px-4 py-2 rounded-md text-center text-gray-800 font-medium shadow border border-yellow-300">
+                        <%= player %>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-6">
+        <a href="/"
+            class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded transition">
+            Go back to homepage
+        </a>
+    </div>
+</body>
+
+</html>
