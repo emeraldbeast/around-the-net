@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/004/785/425/original/table-tennis-rackets-and-ball-vector.jpg"
+        type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-600 text-yellow-100">
+
+    <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
+        <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            Around the Net - BITS Goa
+        </div>
+        <div class="md:hidden">
+            <button id="hamburger"
+                class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">☰</button>
+        </div>
+        <ul id="navLinks"
+            class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 shadow-lg
+             md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
+            <li>
+                <a href="" target="_blank"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Matches
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Playoffs
+                </a>
+            </li>
+            <li>
+                <a href="/" target="_blank"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Homepage
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="flex justify-center mt-12 mb-8">
+        <div
+            class="relative w-64 h-12 bg-zinc-800 rounded-full flex items-center justify-between px-2 text-yellow-100 font-semibold">
+            <button id="groupAButton" class="z-10 w-1/2 h-full flex items-center justify-center">Group A</button>
+            <button id="groupBButton" class="z-10 w-1/2 h-full flex items-center justify-center">Group B</button>
+            <div id="slider"
+                class="absolute top-0 left-0 w-1/2 h-full bg-yellow-500 rounded-full transition-all duration-300"></div>
+        </div>
+    </div>
+
+    <div id="groupTables" class="relative w-full">
+        <div id="groupA" class="transition-opacity duration-500 opacity-100">
+            <h3 class="text-2xl font-bold mb-4 text-center text-yellow-300">Group A</h3>
+            <div class="overflow-x-auto">
+                <table class="w-[80%] mx-auto bg-zinc-900 rounded-xl shadow-2xl border border-yellow-300">
+                    <thead>
+                        <tr class="bg-yellow-700 text-left text-sm uppercase tracking-wider text-zinc-100">
+                            <th class="px-4 py-4 w-1/3">Team</th>
+                            <th class="px-2 py-4 text-center">P</th>
+                            <th class="px-2 py-4 text-center">W</th>
+                            <th class="px-2 py-4 text-center">L</th>
+                            <th class="px-2 py-4 text-center">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-base divide-y divide-yellow-600">
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDabang_Delhi_T_T_C_f65b845603.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>Dabang Delhi TTC</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">1</td>
+                            <td class="px-2 py-3 text-center">1</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">2</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FAhmedabad_SG_Pipers_6d67464c1f.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>Ahmedabad SG Pipers</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FJaipur_Patriots_a2d2ae68e2.png&w=640&q=75"" alt="
+                                    Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>Jaipur Patriots</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDempo_Goa_Challengers_2_4f4ca14b88.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>Dempo Goa Challengers</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">1</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="groupB"
+            class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0 pointer-events-none">
+            <h3 class="text-2xl font-bold mb-4 text-center text-yellow-300">Group B</h3>
+            <div class="overflow-x-auto">
+                <table class="w-[80%] mx-auto bg-zinc-900 rounded-xl shadow-2xl border border-yellow-300">
+                    <thead>
+                        <tr class="bg-yellow-700 text-left text-sm uppercase tracking-wider text-zinc-100">
+                            <th class="px-4 py-4 w-1/3">Team</th>
+                            <th class="px-2 py-4 text-center">P</th>
+                            <th class="px-2 py-4 text-center">W</th>
+                            <th class="px-2 py-4 text-center">L</th>
+                            <th class="px-2 py-4 text-center">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-base divide-y divide-yellow-600">
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FKolkata_Thunder_Blades_779f7cc584.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>Kolkata Thunder Blades</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FPune_Jaguars_0f95943b31.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>PBG Pune Jaguars</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2Fstanleys_chennai_lion_white_with_stroke_391771c2d6.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>Stanley's Chennai Lions</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-semibold flex items-center space-x-3">
+                                <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FU_Mumba_TT_e31b087694.png&w=640&q=75"
+                                    alt="Team Logo" class="w-8 h-8 rounded-full border border-yellow-300">
+                                <span>U Mumba TT</span>
+                            </td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                            <td class="px-2 py-3 text-center">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const groupAButton = document.getElementById("groupAButton");
+        const groupBButton = document.getElementById("groupBButton");
+        const slider = document.getElementById("slider");
+        const groupA = document.getElementById("groupA");
+        const groupB = document.getElementById("groupB");
+
+        groupAButton.addEventListener("click", () => {
+            slider.style.left = "0%";
+            groupA.style.opacity = "1";
+            groupA.style.pointerEvents = "auto";
+            groupB.style.opacity = "0";
+            groupB.style.pointerEvents = "none";
+        });
+
+        groupBButton.addEventListener("click", () => {
+            slider.style.left = "50%";
+            groupA.style.opacity = "0";
+            groupA.style.pointerEvents = "none";
+            groupB.style.opacity = "1";
+            groupB.style.pointerEvents = "auto";
+        });
+
+        function sortLeaderboardByPoints(tableId) {
+            const table = document.querySelector(`#${tableId} table`);
+            const tbody = table.querySelector("tbody");
+            const rows = Array.from(tbody.querySelectorAll("tr"));
+
+            rows.sort((a, b) => {
+                const pointsA = parseInt(a.children[4].textContent.trim()) || 0;
+                const pointsB = parseInt(b.children[4].textContent.trim()) || 0;
+                return pointsB - pointsA;
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            sortLeaderboardByPoints("groupA");
+            sortLeaderboardByPoints("groupB");
+        });
+    </script>
+
+</body>
+
+</html>

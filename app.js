@@ -18,8 +18,8 @@ app.get('/',(req,res)=>{
     res.render("index"); 
 })
 
-app.get('/fixtures',(req,res)=>{
-    res.render('fixtures')
+app.get('/tournament',(req,res)=>{
+    res.render('tournament')
 })
 
 app.get('/teams/:id', (req, res) => {
