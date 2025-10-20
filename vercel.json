@@ -1,9 +1,17 @@
 {
-    "version":2,
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"app.js"
-        }
-    ]
+  "version": 2,
+  "routes": [
+    {
+      "src": "/animations/(.*)",
+      "dest": "/animations/$1"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    }
+  ]
 }
