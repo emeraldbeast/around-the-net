@@ -1,9 +1,9 @@
 {
-  "main":"server.js",
-  "scripts":{
-    "start":"node server"
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
   },
-  "license":"ISC",
+  "license": "ISC",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",

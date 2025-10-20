@@ -9,10 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tournament</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            if (loader) loader.classList.add('opacity-0', 'pointer-events-none'); 
+            const video = document.getElementById('tt-video');
+            if (video) video.playbackRate = 0.5;
+        });
+    </script>
 </head>
 
 <body class="bg-zinc-600 text-yellow-100">
-
+    <div id="page-loader"
+        class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-[2000ms]">
+        <video id="tt-video" autoplay muted loop playsinline class="w-[500px] h-[500px]">
+            <source src="/animations/tt-loader.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
         <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
             onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
