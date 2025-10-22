@@ -13,56 +13,63 @@
 </head>
 
 <body>
-    <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
-        <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-            Around the Net - BITS Goa
-        </div>
+    <div id="logo-loader"
+        class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-zinc-900 transition-opacity duration-700">
+        <img src="/images/around-the-net-logo.png" id="logo" class="w-40 relative transition-all duration-700">
+        <!-- <h1 class="text-white text-2xl font-bold tracking-wide">AROUND THE NET</h1> Looks Bad Not gonna use it -->
+    </div>
+    <div id="main-content" class="opacity-0 transition-opacity duration-700">
+        <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
+            <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                Around the Net - BITS Goa
+            </div>
 
-        <div class="md:hidden">
-            <button id="hamburger" class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">
-                ☰
-            </button>
-        </div>
+            <div class="md:hidden">
+                <button id="hamburger"
+                    class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">
+                    ☰
+                </button>
+            </div>
 
-        <ul id="navLinks"
-            class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 shadow-lg
+            <ul id="navLinks"
+                class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 shadow-lg
              md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
-            <!-- <li>
+                <!-- <li>
                 <a onclick="event.preventDefault(); document.getElementById('players').scrollIntoView({ behavior: 'smooth' });"
                     class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
                     Players
                 </a>
             </li> -->
-            <li>
-                <a onclick="event.preventDefault(); document.getElementById('owners').scrollIntoView({ behavior: 'smooth' });"
-                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
-                    Teams
-                </a>
-            </li>
-            <li>
-                <a href="/tournament" target="_blank"
-                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
-                    Tournament
-                </a>
-            </li>
-            <li>
-                <a onclick="event.preventDefault(); document.getElementById('contact-info').scrollIntoView({ behavior: 'smooth' });"
-                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
-                    Contact Us
-                </a>
-            </li>
-        </ul>
-    </div>
+                <li>
+                    <a onclick="event.preventDefault(); document.getElementById('owners').scrollIntoView({ behavior: 'smooth' });"
+                        class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                        Teams
+                    </a>
+                </li>
+                <li>
+                    <a href="/tournament" target="_blank"
+                        class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                        Tournament
+                    </a>
+                </li>
+                <li>
+                    <a onclick="event.preventDefault(); document.getElementById('contact-info').scrollIntoView({ behavior: 'smooth' });"
+                        class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-    <div class="min-h-screen flex flex-col">
-        <div class="bg-zinc-700 text-white flex-grow flex flex-col justify-center items-center px-6 py-10">
+        <div class="min-h-screen flex flex-col">
+            <div class="bg-zinc-700 text-white flex-grow flex flex-col justify-center items-center px-6 py-10">
 
-            <div class="text-center mb-12">
-                <img src="/images/around-the-net-logo.png" alt="Around the Net Logo"
-                    class="w-[300px] md:w-[400px] lg:w-[500px] drop-shadow-lg">
-            </div>
-            <!-- <div class="bg-zinc-700 text-white flex-grow flex flex-col justify-center items-center px-6 py-10">
+                <div class="text-center mb-12">
+                    <img src="/images/around-the-net-logo.png" alt="Around the Net Logo"
+                        class="w-[100px] md:w-[150px] lg:w-[300px] drop-shadow-lg">
+                </div>
+                <!-- <div class="bg-zinc-700 text-white flex-grow flex flex-col justify-center items-center px-6 py-10">
 
     <div class="text-center mb-12">
       <h1 class="text-6xl font-extrabold tracking-tight drop-shadow-lg">
@@ -70,136 +77,139 @@
       </h1>
     </div> -->
 
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl w-full">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl w-full">
 
-                <div class="md:w-1/3 text-lg leading-relaxed text-center md:text-left">
-                    <p>
-                        Around the Net is the ultimate team-based Table Tennis showdown. Whether you are a seasoned pro or just passionate about table tennis, this is your shot to get drafted through a live auction and make campus table tennis history
-                    </p>
-                </div>
+                    <div class="md:w-1/3 text-lg leading-relaxed text-center md:text-left">
+                        <p>
+                            Around the Net is the ultimate team-based Table Tennis showdown. Whether you are a seasoned
+                            pro
+                            or just passionate about table tennis, this is your shot to get drafted through a live
+                            auction
+                            and make campus table tennis history
+                        </p>
+                    </div>
 
-                <!-- TV Container -->
-                <div id="tv" class="relative flex justify-center w-full">
+                    <!-- TV Container -->
+                    <div id="tv" class="relative flex justify-center w-full">
 
-                    <!-- TV Frame -->
-                    <img src="https://static.vecteezy.com/system/resources/previews/024/515/956/original/4k-tv-flat-screen-lcd-oled-plasma-realistic-3d-model-white-blank-monitor-display-mockup-empty-television-template-wide-flatscreen-monitor-hanging-on-the-wall-design-element-for-catalog-web-site-png.png"
-                        alt="TV Frame" class="w-[600px] md:w-[700px] lg:w-[800px] h-auto rounded-md shadow-lg" />
+                        <!-- TV Frame -->
+                        <img src="https://static.vecteezy.com/system/resources/previews/024/515/956/original/4k-tv-flat-screen-lcd-oled-plasma-realistic-3d-model-white-blank-monitor-display-mockup-empty-television-template-wide-flatscreen-monitor-hanging-on-the-wall-design-element-for-catalog-web-site-png.png"
+                            alt="TV Frame" class="w-[600px] md:w-[700px] lg:w-[800px] h-auto rounded-md shadow-lg" />
 
-                    <!-- Slide Wrapper inside TV screen -->
-                    <div class="absolute top-[5.25%] left-[2.5%] w-[95%] h-[84.5%] overflow-hidden">
+                        <!-- Slide Wrapper inside TV screen -->
+                        <div class="absolute top-[5.25%] left-[2.5%] w-[95%] h-[84.5%] overflow-hidden">
 
-                        <div id="carouselWrapper"
-                            class="flex w-full h-full transition-transform duration-700 ease-in-out">
+                            <div id="carouselWrapper"
+                                class="flex w-full h-full transition-transform duration-700 ease-in-out">
 
-                            <!-- Current Image -->
-                            <img id="carouselImage1" src="/images/image1.png" alt="Carousel Image"
-                                class="w-full h-full object-cover flex-shrink-0 rounded shadow" />
+                                <!-- Current Image -->
+                                <img id="carouselImage1" src="/images/image1.png" alt="Carousel Image"
+                                    class="w-full h-full object-cover flex-shrink-0 rounded shadow" />
 
-                            <!-- Next Image (used for sliding in) -->
-                            <img id="carouselImage2" src="/images/image2.png" alt="Next Image"
-                                class="w-full h-full object-cover flex-shrink-0 rounded shadow" />
+                                <!-- Next Image (used for sliding in) -->
+                                <img id="carouselImage2" src="/images/image2.png" alt="Next Image"
+                                    class="w-full h-full object-cover flex-shrink-0 rounded shadow" />
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- WhatsApp Button -->
+                    <div class="md:w-1/3 flex justify-center md:justify-end">
+                        <a href="https://chat.whatsapp.com/CJp7ZmyaD6v2om5xHOMMZj?mode=wwc" target="_blank"
+                            class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white text-base md:text-lg font-medium py-3 px-6 rounded transition text-center">
+                            <img src="/images/whatsapp-icon.png" alt="WhatsApp" class="w-10 h-10" />
+                            Join Our WhatsApp Community
+                        </a>
                     </div>
                 </div>
 
-                <!-- WhatsApp Button -->
-                <div class="md:w-1/3 flex justify-center md:justify-end">
-                    <a href="https://chat.whatsapp.com/CJp7ZmyaD6v2om5xHOMMZj?mode=wwc"
-                        target ="_blank"
-                        class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white text-base md:text-lg font-medium py-3 px-6 rounded transition text-center">
-                        <img src="/images/whatsapp-icon.png" alt="WhatsApp" class="w-10 h-10" />
-                        Join Our WhatsApp Community
-                    </a>
-                </div>
+            </div>
+        </div>
+
+        <hr class="border-t-4 border-gray-400 w-full">
+
+        <div id="owners" class="w-full bg-zinc-900 py-10 px-8">
+            <div class="players-text text-4xl text-yellow-600 font-bold mb-10 text-center">
+                <h1>Teams</h1>
             </div>
 
+            <div class="grid gap-8 justify-items-center"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+
+                <a href="/teams/ahmedabad-sg-pipers" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FAhmedabad_SG_Pipers_6d67464c1f.png&w=640&q=75"
+                            alt="Ahmedabad SG Pipers" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">Ahmedabad SG Pipers</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/dabang-delhi-ttc" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDabang_Delhi_T_T_C_f65b845603.png&w=640&q=75"
+                            alt="Dabang Delhi T.T.C." class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">Dabang Delhi T.T.C.</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/dempo-goa-challengers" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDempo_Goa_Challengers_2_4f4ca14b88.png&w=640&q=75"
+                            alt="Dempo Goa Challengers" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">Dempo Goa Challengers</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/jaipur-patriots" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FJaipur_Patriots_a2d2ae68e2.png&w=640&q=75"
+                            alt="Jaipur Patriots" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">Jaipur Patriots</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/kolkata-thunder-blades" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FKolkata_Thunder_Blades_779f7cc584.png&w=640&q=75"
+                            alt="Kolkata Thunder Blades" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">Kolkata Thunder Blades</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/pbg-pune-jaguars" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FPune_Jaguars_0f95943b31.png&w=640&q=75"
+                            alt="PBG Pune Jaguars" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">PBG Pune Jaguars</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/stanleys-chennai-lions" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2Fstanleys_chennai_lion_white_with_stroke_391771c2d6.png&w=640&q=75"
+                            alt="Stanley's Chennai Lions" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">Stanley's Chennai Lions</h2>
+                    </div>
+                </a>
+
+                <a href="/teams/u-mumba-tt" target="_blank" class="w-full">
+                    <div
+                        class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
+                        <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FU_Mumba_TT_e31b087694.png&w=640&q=75"
+                            alt="U Mumba TT" class="w-[200px] h-[200px] object-contain mb-2">
+                        <h2 class="text-white text-center text-base font-semibold">U Mumba TT</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-
-    <hr class="border-t-4 border-gray-400 w-full">
-
-    <div id="owners" class="w-full bg-zinc-900 py-10 px-8">
-        <div class="players-text text-4xl text-yellow-600 font-bold mb-10 text-center">
-            <h1>Teams</h1>
-        </div>
-
-        <div class="grid gap-8 justify-items-center"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-
-            <a href="/teams/ahmedabad-sg-pipers" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FAhmedabad_SG_Pipers_6d67464c1f.png&w=640&q=75"
-                        alt="Ahmedabad SG Pipers" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">Ahmedabad SG Pipers</h2>
-                </div>
-            </a>
-
-            <a href="/teams/dabang-delhi-ttc" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDabang_Delhi_T_T_C_f65b845603.png&w=640&q=75"
-                        alt="Dabang Delhi T.T.C." class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">Dabang Delhi T.T.C.</h2>
-                </div>
-            </a>
-
-            <a href="/teams/dempo-goa-challengers" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDempo_Goa_Challengers_2_4f4ca14b88.png&w=640&q=75"
-                        alt="Dempo Goa Challengers" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">Dempo Goa Challengers</h2>
-                </div>
-            </a>
-
-            <a href="/teams/jaipur-patriots" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FJaipur_Patriots_a2d2ae68e2.png&w=640&q=75"
-                        alt="Jaipur Patriots" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">Jaipur Patriots</h2>
-                </div>
-            </a>
-
-            <a href="/teams/kolkata-thunder-blades" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FKolkata_Thunder_Blades_779f7cc584.png&w=640&q=75"
-                        alt="Kolkata Thunder Blades" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">Kolkata Thunder Blades</h2>
-                </div>
-            </a>
-
-            <a href="/teams/pbg-pune-jaguars" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FPune_Jaguars_0f95943b31.png&w=640&q=75"
-                        alt="PBG Pune Jaguars" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">PBG Pune Jaguars</h2>
-                </div>
-            </a>
-
-            <a href="/teams/stanleys-chennai-lions" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2Fstanleys_chennai_lion_white_with_stroke_391771c2d6.png&w=640&q=75"
-                        alt="Stanley's Chennai Lions" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">Stanley's Chennai Lions</h2>
-                </div>
-            </a>
-
-            <a href="/teams/u-mumba-tt" target="_blank" class="w-full">
-                <div
-                    class="flex flex-col items-center bg-zinc-900 p-4 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-yellow-500 hover:shadow-lg">
-                    <img src="https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FU_Mumba_TT_e31b087694.png&w=640&q=75"
-                        alt="U Mumba TT" class="w-[200px] h-[200px] object-contain mb-2">
-                    <h2 class="text-white text-center text-base font-semibold">U Mumba TT</h2>
-                </div>
-            </a>
-        </div>
-    </div>
-
 
     <hr class="border-t-4 border-gray-400 w-full">
 
@@ -248,7 +258,6 @@
             <span class="text-sm text-zinc-300">8882220990</span>
         </div>
     </footer>
-
     <script>
         // Hamburger Menu Toggle
         const btn = document.getElementById('hamburger');
@@ -274,7 +283,7 @@
             "/images/image3.png",
             "/images/image4.png",
             "/images/image5.png"
-            ];
+        ];
 
         let currentIndex = 0;
         const wrapper = document.getElementById("carouselWrapper");
@@ -290,20 +299,12 @@
                 img1.src = img2.src;
                 wrapper.style.transition = "none";
                 wrapper.style.transform = "translateX(0)";
-                // Re-enable transition for next slide
                 setTimeout(() => {
                     wrapper.style.transition = "transform 0.7s ease-in-out";
                 }, 50);
             }, 700);
         }
-        function toggleCategory(cat) {
-            const section = document.getElementById(`category-${cat}`);
-            const icon = document.getElementById(`icon-${cat}`);
-            const isVisible = !section.classList.contains('hidden');
 
-            section.classList.toggle('hidden', isVisible);
-            icon.textContent = isVisible ? '+' : '−';
-        }
         function prevImage() {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             img2.src = images[currentIndex];
@@ -323,8 +324,37 @@
         setInterval(() => {
             nextImage();
         }, 2000);
-    </script>
 
+        // Category Toggle
+        function toggleCategory(cat) {
+            const section = document.getElementById(`category-${cat}`);
+            const icon = document.getElementById(`icon-${cat}`);
+            const isVisible = !section.classList.contains('hidden');
+
+            section.classList.toggle('hidden', isVisible);
+            icon.textContent = isVisible ? '+' : '−';
+        }
+
+        window.addEventListener("load", () => {
+            const logo = document.getElementById("logo");
+            const loader = document.getElementById("logo-loader");
+            const content = document.getElementById("main-content");
+
+            setTimeout(() => {
+                logo.classList.add("top-[-200px]", "scale-[0.6]");
+            }, 500);
+
+            setTimeout(() => {
+                loader.classList.add("opacity-0");
+                content.classList.remove("opacity-0");
+
+                setTimeout(() => {
+                    loader.remove();
+                }, 700);
+            }, 1200);
+        });
+
+    </script>
 
 </body>
 
