@@ -6,6 +6,10 @@
       "dest": "/animations/$1"
     },
     {
+      "src": "/logos/(.*)",
+      "dest": "/logos/$1"
+    },
+    {
       "src": "/images/(.*)",
       "dest": "/images/$1"
     },
