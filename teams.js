@@ -1,32 +1,32 @@
 const teams = [
   {
-    id: "ahmedabad-sg-pipers",
-    name: "Ahmedabad SG Pipers",
-    logo: "https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FAhmedabad_SG_Pipers_6d67464c1f.png&w=640&q=75",
+    id: "backhand-blitzers",
+    name: "Backhand Blitzers",
+    logo: "/logos/bac-bli.png",
     owner: "Shrivats Prabhu",
     captain: "Anvesh Mishra", 
     players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
   },
   {
-    id: "dabang-delhi-ttc",
-    name: "Dabang Delhi T.T.C",
-    logo: "https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDabang_Delhi_T_T_C_f65b845603.png&w=640&q=75",
+    id: "noughty-netters",
+    name: "Noughty Netters",
+    logo: "/logos/nou-net.png",
     owner: "Ayush Shukla",
     captain: "Arya Jain",
     players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
   },
   {
-    id: "dempo-goa-challengers",
-    name: "Dempo Goa Challengers",
-    logo: "https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FDempo_Goa_Challengers_2_4f4ca14b88.png&w=640&q=75",
+    id: "the-batmen",
+    name: "The Batmen",
+    logo: "/logos/the-bat.png",
     owner: "Shrivats Prabhu",
     captain: "Anvesh Mishra", 
     players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
   },
   {
-    id: "jaipur-patriots",
-    name: "Jaipur Patriots",
-    logo: "https://ultimatetabletennis.in/_next/image?url=https%3A%2F%2Futtcms.tinglabs.in%2Fuploads%2FJaipur_Patriots_a2d2ae68e2.png&w=640&q=75",
+    id: "the-untouchables",
+    name: "The Untouchables",
+    logo: "/logos/the-unt.png",
     owner: "Ayush Shukla",
     captain: "Arya Jain",
     players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
