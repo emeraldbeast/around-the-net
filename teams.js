@@ -62,6 +62,14 @@ const teams = [
     owner: "Vismay V Shanbhag",
     captain: "TBA",
     // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+  },
+  {
+    id: "blade-runners",
+    name: "Blade Runners",
+    logo: "/logos/bla-run.png",
+    owner: "Albin Abraham",
+    captain: "TBA",
+    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
   }
 ];
 
