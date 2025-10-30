@@ -34,7 +34,7 @@ const teams = [
   {
     id: "pong-stars",
     name: "Pong Stars",
-    logo: "/logos/pong-stars.png",
+    logo: "/logos/pon-sta.png",
     owner: "Ayush Shukla",
     captain: "TBA", 
     // players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
