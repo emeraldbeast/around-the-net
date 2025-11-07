@@ -70,6 +70,14 @@ const teams = [
     owner: "Albin Abraham",
     captain: "TBA",
     // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+  },
+  {
+    id: "feni-flickers",
+    name: "Feni Flickers",
+    logo: "/logos/fen-fli.png",
+    owner: "Advay Malik",
+    captain: "TBA",
+    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
   }
 ];
 
