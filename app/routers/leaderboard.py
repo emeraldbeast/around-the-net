@@ -1,12 +1,22 @@
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException, status, Body, APIRouter
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from .. import models, schemas, oauth2
 from typing import List, Dict, Optional
 from sqlalchemy.orm import Session
-from sqlalchemy import func
+from sqlalchemy import func, desc
 from ..database import get_db
 from datetime import datetime
 import asyncio
+import enum
+
+class SubMatchType(str, enum.Enum):
+    singles = "singles"
+    doubles = "doubles"
+
+class RoundType(str, enum.Enum):
+    group = "group"
+    semifinal = "semifinal"
+    final = "final"
 
 router = APIRouter(
     prefix="/leaderboard",
@@ -80,3 +90,118 @@ def create_submatch(submatch: schemas.SubMatchCreate, db: Session = Depends(get_
         team1_score=new_submatch.team1_score,
         team2_score=new_submatch.team2_score,
     )
+
+@router.post("/sets", response_model=schemas.SetOut)
+def create_set(set: schemas.SetCreate, db: Session = Depends(get_db)):
+    submatch = db.query(models.SubMatch).filter(models.SubMatch.id == set.submatch_id).first()
+    if not submatch:
+        raise HTTPException(404, "Parent Submatch not found")
+    
+    winner_score = max(set.team1_score, set.team2_score)
+    winner_id = 0
+    loser_id = 0
+    if set.team1_score == winner_score:
+        winner_id = (
+        db.query(models.Match.team1_id)
+        .join(models.SubMatch, models.Match.id == models.SubMatch.match_id)
+        .join(models.Set, models.SubMatch.id == models.Set.submatch_id)
+        .filter(models.Set.id == models.set_id)
+        .first()
+        )
+        loser_id = (
+        db.query(models.Match.team2_id)
+        .join(models.SubMatch, models.Match.id == models.SubMatch.match_id)
+        .join(models.Set, models.SubMatch.id == models.Set.submatch_id)
+        .filter(models.Set.id == models.set_id)
+        .first()
+        )
+    else:
+        winner_id = (
+        db.query(models.Match.team2_id)
+        .join(models.SubMatch, models.Match.id == models.SubMatch.match_id)
+        .join(models.Set, models.SubMatch.id == models.Set.submatch_id)
+        .filter(models.Set.id == models.set_id)
+        .first()
+        )
+        loser_id = (
+        db.query(models.Match.team2_id)
+        .join(models.SubMatch, models.Match.id == models.SubMatch.match_id)
+        .join(models.Set, models.SubMatch.id == models.Set.submatch_id)
+        .filter(models.Set.id == models.set_id)
+        .first()
+        )
+    num_sets = db.query(func.count(models.Set.id)).filter(models.Set.submatch_id == set.submatch_id).scalar()
+    match_type = (
+        db.query(models.Match.round)
+        .join(models.SubMatch, models.Match.id == models.SubMatch.match_id)
+        .join(models.Set, models.SubMatch.id == models.Set.submatch_id)
+        .filter(models.Set.id == models.set_id)
+        .first()
+        )
+    submatch_type = (
+        db.query(models.SubMatch.type)
+        .join(models.Set, models.SubMatch.id == models.Set.submatch_id)
+        .filter(models.Set.id == models.set_id)
+        .first()
+        )
+    new_set = models.Set(
+        submatch_id=set.submatch_id,
+        set_number=num_sets,
+        team1_score=set.team1_score,
+        team2_score=set.team2_score,
+        winner_id=winner_id,
+        type=submatch.type,
+    )
+    db.add(new_set)
+    won_by_winner = db.query(func.count(models.Set.id)).filter(models.Set.winner_id == winner_id).scalar()
+
+    satisfy = 0
+    if won_by_winner == 2 and match_type==RoundType.group.value:
+        satisfy = 1
+    elif won_by_winner == 3:
+        satisfy = 1
+
+    if satisfy == 1:
+        submatch.winner_team_id = winner_id
+
+        match = db.query(models.Match).filter(models.Match.id == submatch.match_id).first()
+        winner_stats = db.query(models.TeamStats).filter(models.Team.id == winner_id).first()
+        loser_stats = db.query(models.TeamStats).filter(models.Team.id == loser_id).first()
+        score_diff = abs(set.team1_score-set.team2_score)
+        match_score = 1
+
+        if submatch_type==SubMatchType.doubles.value:
+            match_score *= 2
+            score_diff *= 2
+
+        if winner_id == match.team1_id:
+            match.team1_score += match_score
+        else:
+            match.team2_score += match_score
+
+        winner_stats.score_diff += score_diff
+        loser_stats.score_diff -= score_diff
+
+        if match.team1_score == 4 or match.team2_wins == 4:
+                winner_stats.wins += 1
+                loser_stats.losses += 1
+        
+    return new_set
+
+@router.get("/groups/{group_id}/standings")
+def get_group_standings(group_id: int, db: Session = Depends(get_db)):
+    teams = (
+        db.query(models.Team)
+        .filter(models.Team.group_id == group_id)
+        .join(models.TeamStats)
+        .order_by(desc(models.TeamStats.wins), desc(models.TeamStats.score_diff))
+        .all()
+    )
+    if not teams:
+        raise HTTPException(404, f"No teams found in group {group_id}")
+
+    standings = [
+        {"team": t.name, "wins": t.stats.wins, "losses": t.stats.losses, "score_diff": t.stats.score_diff}
+        for t in teams
+    ]
+    return JSONResponse(content={"group": group_id, "standings": standings})

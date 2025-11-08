@@ -90,3 +90,20 @@ class MatchOut(BaseModel):
     round: RoundType
     class Config:
         orm_mode = True
+
+class SetCreate(BaseModel):
+    team1_id: int
+    team2_id: int
+    submatch_id: int
+    team1_score: int
+    team2_score: int
+
+class SetOut(BaseModel):
+    submatch_id: int
+    type: SubMatchType
+    team1_score: int
+    team2_score: int
+    team1_players: List[int]
+    team2_players: List[int]
+    class Config:
+        orm_mode = True

@@ -71,6 +71,8 @@ class Match(Base):
     round = Column(Enum(RoundType))
     team1_id = Column(Integer, ForeignKey("teams.id"))
     team2_id = Column(Integer, ForeignKey("teams.id"))
+    team1_score = Column(Integer, default=0)
+    team2_score = Column(Integer, default=0)
     winner_id = Column(Integer, ForeignKey("teams.id"), nullable=True)
 
     team1 = relationship("Team", foreign_keys=[team1_id])
@@ -90,3 +92,13 @@ class SubMatch(Base):
 
     match = relationship("Match", back_populates="submatches")
     players = relationship("Player", secondary=player_submatch, back_populates="submatch")
+
+class Set(Base):
+    __tablename__ = "setscore"
+    id = Column(Integer, primary_key=True)
+    submatch_id = Column(Integer, ForeignKey("submatches.id"))
+    set_number = Column(Integer, nullable=False)
+    team1_score = Column(Integer, default=0)
+    team2_score = Column(Integer, default=0)
+    winner_id = Column(Integer, ForeignKey("teams.id"), nullable=True)
+    submatch = relationship("SubMatch", back_populates="sets")
