@@ -8,10 +8,10 @@ const teams = [
     // players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
   },
   {
-    id: "noughty-netters",
-    name: "Noughty Netters",
-    logo: "/logos/nou-net.png",
-    owner: "Aadinath Keshav",
+    id: "stardust-smashaders",
+    name: "Stardust Smashaders",
+    logo: "/logos/sta-sma.png",
+    owner: "Yatin Rai",
     captain: "TBA",
     // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
   },
