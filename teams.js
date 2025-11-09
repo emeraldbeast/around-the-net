@@ -51,7 +51,7 @@ const teams = [
     id: "high-rankers",
     name: "High Rankers",
     logo: "/logos/hig-ran.png",
-    owner: "Arihant Bansal",
+    owner: "Arihant Bhandari",
     captain: "TBA", 
     players: []
   },
