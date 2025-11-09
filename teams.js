@@ -5,7 +5,7 @@ const teams = [
     logo: "/logos/bac-bli.png",
     owner: "Dhananjay Bhattacharya",
     captain: "TBA", 
-    // players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
+    players: []
   },
   {
     id: "stardust-smashaders",
@@ -13,7 +13,7 @@ const teams = [
     logo: "/logos/sta-sma.png",
     owner: "Yatin Rai",
     captain: "TBA",
-    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+    players: []
   },
   {
     id: "the-batmen",
@@ -21,7 +21,7 @@ const teams = [
     logo: "/logos/the-bat.png",
     owner: "Rohit Raj",
     captain: "TBA", 
-    // players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
+    players: []
   },
   {
     id: "the-untouchables",
@@ -29,7 +29,7 @@ const teams = [
     logo: "/logos/the-unt.png",
     owner: "Akshat Pandey",
     captain: "TBA",
-    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+    players: []
   },
   {
     id: "pong-stars",
@@ -37,7 +37,7 @@ const teams = [
     logo: "/logos/pon-sta.png",
     owner: "Ayush Shukla",
     captain: "TBA", 
-    // players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
+    players: []
   },
   {
     id: "ball-breakers",
@@ -45,15 +45,15 @@ const teams = [
     logo: "/logos/bal-bre.png",
     owner: "Priyanshu Jain",
     captain: "TBA",
-    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+    players: []
   },
   {
     id: "high-rankers",
-    name: "Ahmedabad SG Pipers",
+    name: "High Rankers",
     logo: "/logos/hig-ran.png",
     owner: "Arihant Bansal",
     captain: "TBA", 
-    // players: ["Aarush", "Vedang", "Abhinav", "Goyal", "Chinhalli", "Padhi"]
+    players: []
   },
   {
     id: "sancoale-smashers",
@@ -61,7 +61,7 @@ const teams = [
     logo: "/logos/san-sma.png",
     owner: "Vismay V Shanbhag",
     captain: "TBA",
-    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+    players: []
   },
   {
     id: "blade-runners",
@@ -69,7 +69,7 @@ const teams = [
     logo: "/logos/bla-run.png",
     owner: "Albin Abraham",
     captain: "TBA",
-    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+    players: []
   },
   {
     id: "feni-flickers",
@@ -77,7 +77,7 @@ const teams = [
     logo: "/logos/fen-fli.png",
     owner: "Advay Malik",
     captain: "TBA",
-    // players: ["Divyam", "Aayush", "Goatnaath", "Jain","Sigmawat","Keshav"]
+    players: []
   }
 ];
 
