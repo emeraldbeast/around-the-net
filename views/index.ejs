@@ -81,9 +81,9 @@
 
                     <div class="md:w-[25%] text-lg leading-relaxed text-center md:text-left">
                         <p>
-                            Around the Net is where campus table tennis comes alive, fast-paced, high-energy, and all
+                            Around the Net is where campus table tennis comes alive — fast-paced, high-energy, and all
                             about teamwork. Players battle for every point, showcasing passion and precision in the
-                            fight for ultimate bragging rights. This isn’t just a tournament, it’s where legends are
+                            fight for ultimate bragging rights. This isn’t just a tournament — it’s where legends are
                             made, one rally at a time.
                         </p>
                     </div>
@@ -290,29 +290,11 @@
         ];
 
         let currentIndex = 0;
-        let isPaused = false;
-
         const wrapper = document.getElementById("carouselWrapper");
         const img1 = document.getElementById("carouselImage1");
         const img2 = document.getElementById("carouselImage2");
 
-        // Apply smooth transition and GPU hint
-        wrapper.style.transition = "transform 0.7s ease-in-out";
-        wrapper.style.willChange = "transform";
-
-        // Pause on hold
-        [img1, img2].forEach(img => {
-            img.addEventListener('mousedown', () => isPaused = true);
-            img.addEventListener('touchstart', () => isPaused = true);
-            img.addEventListener('mouseup', () => isPaused = false);
-            img.addEventListener('touchend', () => isPaused = false);
-            img.addEventListener('mouseenter', () => isPaused = true);
-            img.addEventListener('mouseleave', () => isPaused = false);
-        });
-
         function nextImage() {
-            if (isPaused) return;
-
             currentIndex = (currentIndex + 1) % images.length;
             img2.src = images[currentIndex];
             wrapper.style.transform = "translateX(-100%)";
@@ -328,8 +310,6 @@
         }
 
         function prevImage() {
-            if (isPaused) return;
-
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             img2.src = images[currentIndex];
             wrapper.style.transform = "translateX(100%)";
@@ -359,7 +339,6 @@
             icon.textContent = isVisible ? '+' : '−';
         }
 
-        // Logo Loader Animation
         window.addEventListener("load", () => {
             const logo = document.getElementById("logo");
             const loader = document.getElementById("logo-loader");
@@ -378,6 +357,7 @@
                 }, 700);
             }, 1200);
         });
+
     </script>
 
 </body>
