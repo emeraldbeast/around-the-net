@@ -14,7 +14,7 @@
     <script>
         window.addEventListener('load', () => {
             const loader = document.getElementById('page-loader');
-            if (loader) loader.classList.add('opacity-0', 'pointer-events-none'); 
+            if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
             const video = document.getElementById('tt-video');
             if (video) video.playbackRate = 0.5;
         });
@@ -33,8 +33,10 @@
     <div
         class="max-w-3xl mx-auto p-4 sm:p-6 bg-gradient-to-br from-zinc-700 via-zinc-600 to-red-50 rounded-lg shadow-lg mt-10 ring-2 ring-red-500">
 
-        <img src="<%= team.logo %>" alt="<%= team.name %> Logo"
-            class="w-32 sm:w-40 h-auto rounded-full shadow-md border-4 border-red-500 mx-auto mb-4" />
+        <div
+            class="w-32 sm:w-40 h-32 sm:h-40 rounded-full bg-black overflow-hidden border-4 border-red-500 mx-auto mb-4 shadow-md">
+            <img src="<%= team.logo %>" alt="<%= team.name %> Logo" class="w-full h-full object-scale-down" />
+        </div>
 
         <h1 class="text-2xl sm:text-3xl font-bold text-center text-white mb-4">
             <%= team.name %>
