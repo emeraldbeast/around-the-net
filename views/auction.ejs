@@ -53,8 +53,50 @@
         </div>
     </div>
 <!-- 
-    <div class="card">
-
+    <div class="w-full overflow-x-auto">
+        <table
+            class="w-full sm:w-[92%] lg:w-[96%] xl:w-[1000px] mx-auto bg-zinc-900 rounded-xl shadow-2xl border border-yellow-300 text-base">
+            <thead>
+                <tr class="bg-yellow-700 text-base uppercase tracking-wider text-white">
+                    <th class="px-4 py-4 text-center">#</th>
+                    <th class="px-4 py-4 text-center">Name</th>
+                    <th class="px-4 py-4 text-center">Price</th>
+                    <th class="px-4 py-4 text-left">Team</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-yellow-600">
+                <% sortedPlayers.forEach((player, index)=> {
+                    let rowClass = "";
+                    if (index === 0) rowClass = "bg-yellow-500 text-black"; 
+                    else if (index === 1) rowClass = "bg-gray-300 text-black"; 
+                    else if (index === 2) rowClass = "bg-amber-700 text-white"; 
+                    else rowClass = "text-white"
+                    %>
+                    <tr class="<%= rowClass %>">
+                        <td class="px-4 py-3 text-center font-semibold">
+                            <%= index + 1 %>
+                        </td>
+                        <td class="px-4 py-3 text-center">
+                            <%= player.name %>
+                        </td>
+                        <td class="px-4 py-3 text-center font-medium">
+                            <%= player.price>= 1000000
+                                ? (player.price / 1000000).toFixed(1) + 'M'
+                                : (player.price / 1000).toFixed(0) + 'k' %>
+                        </td>
+                        <td class="px-4 py-3 font-semibold text-left whitespace-nowrap">
+                            <div class="inline-flex items-center space-x-3">
+                                <img src="<%= player.teamLogo %>" alt="Team Logo"
+                                    class="w-7 h-7 rounded-full border border-yellow-300">
+                                <span class="text-base">
+                                    <%= player.teamName %>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </tbody>
+        </table>
     </div> -->
 </body>
 

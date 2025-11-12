@@ -6,8 +6,8 @@ const teams = [
     owner: "Dhananjay Bhattacharya",
     captain: "TBA", 
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Anvesh Mishra", price: 2000000},
+    //   {name: "Divyam Jain", price: 250000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -18,8 +18,8 @@ const teams = [
     owner: "Yatin Rai",
     captain: "TBA",
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Vaidik Srivastava", price: 2500000},
+    //   {name: "Aayush Khetawat", price: 100000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -30,8 +30,7 @@ const teams = [
     owner: "Rohit Raj",
     captain: "TBA", 
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Vedang Chinhalli", price: 1500000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -42,8 +41,7 @@ const teams = [
     owner: "Akshat Pandey",
     captain: "TBA",
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Nachiket Khandekar", price: 1800000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -54,8 +52,7 @@ const teams = [
     owner: "Ayush Shukla",
     captain: "TBA", 
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Vidit Bhansali", price: 1300000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -66,8 +63,7 @@ const teams = [
     owner: "Priyanshu Jain",
     captain: "TBA",
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Aditya Sahoo", price: 1250000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -78,8 +74,7 @@ const teams = [
     owner: "Arihant Bhandari",
     captain: "TBA", 
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Aadinath Keshav", price: 500000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -90,8 +85,7 @@ const teams = [
     owner: "Vismay Vinayak Shanbhag",
     captain: "TBA",
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Abhinav Padhi", price: 750000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -102,8 +96,7 @@ const teams = [
     owner: "Albin Abraham",
     captain: "TBA",
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Khushi Mishra", price: 800000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   },
@@ -114,8 +107,7 @@ const teams = [
     owner: "Advay Malik",
     captain: "TBA",
     // players: [
-    //   {name: "Anvesh", price: 20},
-    //   {name: "Divyam", price: 40}
+    //   {name: "Arindam Bose", price: 650000}
     // ]
     // Add players in this format, makes it easier for setting up an auction stats page
   }

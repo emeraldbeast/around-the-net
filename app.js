@@ -26,9 +26,26 @@ app.get('/tournament/matches',(req,res)=>{
     res.render('matches')
 })
 
-app.get('/auction',(req,res)=>{
-  res.render('auction')
-})
+app.get('/auction', (req, res) => {
+  const sortedPlayers = [];
+
+  teams.forEach(team => {
+    if (Array.isArray(team.players)) {
+      team.players.forEach(player => {
+        sortedPlayers.push({
+          name: player.name,
+          price: player.price,
+          teamName: team.name,
+          teamLogo: team.logo
+        });
+      });
+    }
+  });
+
+  sortedPlayers.sort((a, b) => b.price - a.price);
+
+  res.render('auction', { sortedPlayers });
+});
 
 app.get('/teams/:id', (req, res) => {
   const teamId = (req.params.id);
