@@ -7,9 +7,7 @@
     <title>
         <%= team.name %> | Team Details
     </title>
-    <link rel="icon"
-        href="/images/around-the-net-logo.png"
-        type="image/png">
+    <link rel="icon" href="/images/around-the-net-logo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         window.addEventListener('load', () => {
@@ -59,15 +57,15 @@
 
         <hr class="my-6 border-t border-gray-400" />
 
-        <% if (Array.isArray(team.players) && team.players.length> 0) { %>
+        <% if (Array.isArray(team.players) && team.players.length> 1) { %>
             <div
                 class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 bg-yellow-100/40 backdrop-blur-sm p-4 rounded-md shadow-sm border border-yellow-300">
-                <% team.players.forEach(player=> { %>
+                <% for (let i=1; i < team.players.length; i++) { %>
                     <div
                         class="max-w-[220px] w-full bg-yellow-200/60 backdrop-blur-sm px-4 py-2 rounded-md text-center text-gray-800 font-medium shadow border border-yellow-300 mx-auto">
-                        <%= player %>
+                        <%= team.players[i] %>
                     </div>
-                    <% }) %>
+                    <% } %>
             </div>
             <% } %>
 
