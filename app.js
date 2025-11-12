@@ -26,6 +26,10 @@ app.get('/tournament/matches',(req,res)=>{
     res.render('matches')
 })
 
+app.get('/auction',(req,res)=>{
+  res.render('auction')
+})
+
 app.get('/teams/:id', (req, res) => {
   const teamId = (req.params.id);
   const team = teams.find(t => t.id === teamId);
