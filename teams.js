@@ -87,7 +87,7 @@ const teams = [
     id: "sancoale-smashers",
     name: "Sancoale Smashers",
     logo: "/logos/san-sma.png",
-    owner: "Vismay V Shanbhag",
+    owner: "Vismay Vinayak Shanbhag",
     captain: "TBA",
     // players: [
     //   {name: "Anvesh", price: 20},
