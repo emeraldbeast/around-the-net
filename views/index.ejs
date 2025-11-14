@@ -370,7 +370,7 @@
             const viewportHeight = window.innerHeight;
             let maxVisibleRatio = 0;
             let cardToHighlight = null;
-
+            if (window.innerWidth >= 768) return;
             teamCards.forEach(card => {
                 const rect = card.getBoundingClientRect();
 
