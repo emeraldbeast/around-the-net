@@ -134,7 +134,7 @@ const teams = [
     captain: "Nachiket Khandekar",
     players: [
       {name: "Nachiket Khandekar", price: 1500000},
-      {name: "Shreyas Narayanan", price: 1000000},
+      {name: "Shreyash Narayanan", price: 1000000},
       {name: "Arindam Bose",price:950000},
       {name: "Advait Sandeep Raut", price: 100000},
       {name: "Koushal Agarwal", price: 50000},
