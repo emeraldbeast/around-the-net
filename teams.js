@@ -98,9 +98,9 @@ const teams = [
     captain: "Vedang Chinhalli",
     players: [
       {name: "Vedang Chinhalli", price: 2600000},
-      {name: "Divy Jakothiya", price: 475000},
+      {name: "Divy Jakhotiya", price: 475000},
       {name: "Aarush Nabhar",price:500000},
-      {name: "Ishaan Deshpande", price: 200000},
+      {name: "Ishan Deshpande", price: 200000},
       {name: "Rishabh Jain", price: 75000},
       {name: "Owais Ahmed", price: 125000},
       {name: "Parth Shah", price: 25000}
@@ -118,7 +118,7 @@ const teams = [
       {name: "Tanmay Rao", price: 1950000},
       {name: "Khushi Mishra",price:850000},
       {name: "Aadinath Keshav", price: 300000},
-      {name: "Omkar Vanjhari", price: 425000},
+      {name: "Omkar Vanjari", price: 425000},
       {name: "Hriday Sama", price: 400000},
       {name: "Shaurya Mundra", price: 50000},
       {name: "Rithwik Arun", price: 25000}
