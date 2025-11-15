@@ -39,7 +39,10 @@ const teams = [
     players: [
       {name: "Vidit Bhansali", price: 1350000},
       {name: "Aditya Sahoo", price: 1600000},
-      {name: "Aayush Khetawat",price:525000}
+      {name: "Aayush Khetawat",price:525000},
+      {name: "Pranjal Gangwani",price:125000},
+      {name: "Divyansh Gupta", price: 200000},
+      {name: "Ridham Gala", price: 100000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -54,7 +57,9 @@ const teams = [
       {name: "Aarsh Jaiswal", price: 2150000},
       {name: "Vishnu",price:500000},
       {name: "Anant Saraf",price:375000},
-      {name: "Vrishank Valecha", price: 475000}
+      {name: "Vrishank Valecha", price: 475000},
+      {name: "Divyam Jain", price: 175000},
+      {name: "Sidhant Bhutani", price: 200000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -69,7 +74,8 @@ const teams = [
       {name: "Mihir Sagar Kulkarni", price: 2100000},
       {name: "Pranav Narayanan", price: 850000},
       {name: "Arya Jain", price: 325000},
-      {name: "Vedang Krishna", price: 400000}
+      {name: "Vedang Krishna", price: 400000},
+      {name: "Prasham Bhayani", price: 275000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -99,7 +105,8 @@ const teams = [
       {name: "Tanmay Rao", price: 1950000},
       {name: "Khushi Mishra",price:850000},
       {name: "Aadinath Keshav", price: 300000},
-      {name: "Omkar Vanjhari", price: 425000}
+      {name: "Omkar Vanjhari", price: 425000},
+      {name: "Hriday Sama", price: 400000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -113,7 +120,8 @@ const teams = [
     players: [
       {name: "Nachiket Khandekar", price: 1500000},
       {name: "Shreays Narayanan", price: 1000000},
-      {name: "Arindam Bose",price:950000}
+      {name: "Arindam Bose",price:950000},
+      {name: "Advait Sandeep Raut", price: 100000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -128,7 +136,8 @@ const teams = [
       {name: "Anvesh Mishra", price: 2450000},
       {name: "Daksh Diwakar", price: 650000},
       {name: "Vedaant Desai",price:350000},
-      {name: "Bhavya Sarda", price: 300000}
+      {name: "Bhavya Sarda", price: 300000},
+      {name: "Aditya Ambrish", price: 100000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -142,7 +151,8 @@ const teams = [
     players: [
       {name: "Veer Kanakia", price: 2150000},
       {name: "Aarush Goyal", price: 1450000},
-      {name: "Vatsal Thakkar", price: 200000}
+      {name: "Vatsal Thakkar", price: 200000},
+      {name: "Tanay Mody", price: 50000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
