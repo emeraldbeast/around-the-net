@@ -6,7 +6,8 @@ const teams = [
     owner: "Dhananjay Bhattacharya",
     captain: "TBA", 
     players: [
-      {name: "Vaidik Shrivastava", price: 2400000}
+      {name: "Vaidik Shrivastava", price: 2400000},
+      {name: "Atharv Mehta", price: 1000000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -17,10 +18,10 @@ const teams = [
     logo: "/logos/sta-sma.png",
     owner: "Yatin Rai",
     captain: "TBA",
-    // players: [
-    //   {name: "Vaidik Srivastava", price: 2500000},
-    //   {name: "Aayush Khetawat", price: 100000}
-    // ]
+    players: [
+      {name: "Abhinav Padhi", price: 1250000},
+      {name:"Ammar Abdul Azeez",price:750000}
+    ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
   },
@@ -30,9 +31,10 @@ const teams = [
     logo: "/logos/the-bat.png",
     owner: "Rohit Raj",
     captain: "TBA", 
-    // players: [
-    //   {name: "Vedang Chinhalli", price: 1500000}
-    // ]
+    players: [
+      {name: "Vidit Bhansali", price: 1350000},
+      {name: "Aditya Sahoo", price: 1600000}
+    ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
   },
@@ -55,7 +57,8 @@ const teams = [
     owner: "Ayush Shukla",
     captain: "TBA", 
     players: [
-      {name: "Mihir Sagar Kulkarni", price: 2100000}
+      {name: "Mihir Sagar Kulkarni", price: 2100000},
+      {name: "Pranav Narayanan", price: 850000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -79,7 +82,8 @@ const teams = [
     owner: "Arihant Bhandari",
     captain: "TBA", 
     players: [
-      {name: "Tanmay Rao", price: 1950000}
+      {name: "Tanmay Rao", price: 1950000},
+      {name: "Khushi MIshra",price:850000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -90,9 +94,11 @@ const teams = [
     logo: "/logos/san-sma.png",
     owner: "Vismay Vinayak Shanbhag",
     captain: "TBA",
-    // players: [
-    //   {name: "Abhinav Padhi", price: 750000}
-    // ]
+    players: [
+      {name: "Nachiket Khandekar", price: 1500000},
+      {name: "Shreays Narayanan", price: 1000000},
+      {name: "Arindam Bose",price:950000}
+    ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
   },
@@ -103,7 +109,8 @@ const teams = [
     owner: "Albin Abraham",
     captain: "TBA",
     players: [
-      {name: "Anvesh Mishra", price: 2450000}
+      {name: "Anvesh Mishra", price: 2450000},
+      {name: "Daksh Diwakar", price: 650000}
     ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
@@ -114,9 +121,10 @@ const teams = [
     logo: "/logos/fen-fli.png",
     owner: "Advay Malik",
     captain: "TBA",
-    // players: [
-    //   {name: "Arindam Bose", price: 650000}
-    // ]
+    players: [
+      {name: "Veer Kanakia", price: 2150000},
+      {name: "Aarush Goyal", price: 1450000}
+    ]
     // Add players in this format, makes it easier for setting up an auction stats page
     // Add the captain name first, then add all the other players name
   }
