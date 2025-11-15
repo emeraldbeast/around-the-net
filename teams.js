@@ -9,7 +9,7 @@ const teams = [
       {name: "Vaidik Shrivastava", price: 2400000},
       {name: "Atharv Mehta", price: 1000000},
       {name: "Kanupriya Vyas", price: 400000},
-      {name: "Divyam Gupta", price: 100000},
+      {name: "Divyam Gupta", price: 50000},
       {name: "Saatvik Chaturvedi", price: 100000},
       {name: "Pearl", price: 25000},
       {name: "Anirudh Kumar", price: 25000}
