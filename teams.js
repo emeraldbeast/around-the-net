@@ -4,7 +4,7 @@ const teams = [
     name: "Backhand Blitzers",
     logo: "/logos/bac-bli.png",
     owner: "Dhananjay Bhattacharya",
-    captain: "TBA", 
+    captain: "Vaidik Shrivastava", 
     players: [
       {name: "Vaidik Shrivastava", price: 2400000},
       {name: "Atharv Mehta", price: 1000000},
@@ -22,7 +22,7 @@ const teams = [
     name: "Stardust Smashaders",
     logo: "/logos/sta-sma.png",
     owner: "Yatin Rai",
-    captain: "TBA",
+    captain: "Abhinav Padhi",
     players: [
       {name: "Abhinav Padhi", price: 1250000},
       {name:"Ammar Abdul Azeez",price:750000},
@@ -40,7 +40,7 @@ const teams = [
     name: "The Batmen",
     logo: "/logos/the-bat.png",
     owner: "Rohit Raj",
-    captain: "TBA", 
+    captain: "Vidit Bhansali", 
     players: [
       {name: "Vidit Bhansali", price: 1350000},
       {name: "Aditya Sahoo", price: 1600000},
@@ -58,7 +58,7 @@ const teams = [
     name: "The Untouchables",
     logo: "/logos/the-unt.png",
     owner: "Akshat Pandey",
-    captain: "TBA",
+    captain: "Aarsh Jaiswal",
     players: [
       {name: "Aarsh Jaiswal", price: 2150000},
       {name: "Vishnu",price:500000},
@@ -77,7 +77,7 @@ const teams = [
     name: "Pong Stars",
     logo: "/logos/pon-sta.png",
     owner: "Ayush Shukla",
-    captain: "TBA", 
+    captain: "Mihir Sagar Kulkarni", 
     players: [
       {name: "Mihir Sagar Kulkarni", price: 2100000},
       {name: "Pranav Narayanan", price: 850000},
@@ -95,7 +95,7 @@ const teams = [
     name: "Ball Breakers",
     logo: "/logos/bal-bre.png",
     owner: "Priyanshu Jain",
-    captain: "TBA",
+    captain: "Vedang Chinhalli",
     players: [
       {name: "Vedang Chinhalli", price: 2600000},
       {name: "Divy Jakothiya", price: 475000},
@@ -113,7 +113,7 @@ const teams = [
     name: "High Rankers",
     logo: "/logos/hig-ran.png",
     owner: "Arihant Bhandari",
-    captain: "TBA", 
+    captain: "Tanmay Rao", 
     players: [
       {name: "Tanmay Rao", price: 1950000},
       {name: "Khushi Mishra",price:850000},
@@ -131,10 +131,10 @@ const teams = [
     name: "Sancoale Smashers",
     logo: "/logos/san-sma.png",
     owner: "Vismay Vinayak Shanbhag",
-    captain: "TBA",
+    captain: "Nachiket Khandekar",
     players: [
       {name: "Nachiket Khandekar", price: 1500000},
-      {name: "Shreays Narayanan", price: 1000000},
+      {name: "Shreyas Narayanan", price: 1000000},
       {name: "Arindam Bose",price:950000},
       {name: "Advait Sandeep Raut", price: 100000},
       {name: "Koushal Agarwal", price: 50000},
@@ -152,7 +152,7 @@ const teams = [
     name: "Blade Runners",
     logo: "/logos/bla-run.png",
     owner: "Albin Abraham",
-    captain: "TBA",
+    captain: "Anvesh Mishra",
     players: [
       {name: "Anvesh Mishra", price: 2450000},
       {name: "Daksh Diwakar", price: 650000},
@@ -171,7 +171,7 @@ const teams = [
     name: "Feni Flickers",
     logo: "/logos/fen-fli.png",
     owner: "Advay Malik",
-    captain: "TBA",
+    captain: "Veer Kanakia",
     players: [
       {name: "Veer Kanakia", price: 2150000},
       {name: "Aarush Goyal", price: 1450000},
