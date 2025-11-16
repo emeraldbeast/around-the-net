@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="/images/around-the-net-logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
+            const video = document.getElementById('tt-video');
+            if (video) video.playbackRate = 0.5;
+        });
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body class="bg-zinc-600 text-yellow-100">
+    <div id="page-loader"
+        class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-[2000ms]">
+        <video id="tt-video" autoplay muted loop playsinline class="w-[500px] h-[500px]">
+            <source src="/animations/tt-loader.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
+        <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            Around the Net - BITS Goa
+        </div>
+        <div class="md:hidden">
+            <button id="hamburger"
+                class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">☰</button>
+        </div>
+        <ul id="navLinks"
+            class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 
+             md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
+            <li>
+                <a href="/tournament/matches"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Matches
+                </a>
+            </li>
+            <!-- <li>
+                <a href="/auction"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Auction
+                </a>
+            </li> -->
+            <!-- <li>
+                <a href="" 
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Playoffs
+                </a>
+            </li> -->
+            <li>
+                <a href="/"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Homepage
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-span-full flex items-center justify-center py-6">
+        <div
+            class="bg-yellow-100 text-yellow-800 px-6 py-3 rounded-lg shadow-md text-center text-lg font-semibold animate-pulse">
+            ⚡ Groups will be announced soon
+        </div>
+    </div>
+</body>
+<script>
+    // Hamburger Menu Toggle
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('navLinks');
+    const links = menu.querySelectorAll('a');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                menu.classList.add('hidden');
+            }
+        });
+    });
+</script>
+</html>
