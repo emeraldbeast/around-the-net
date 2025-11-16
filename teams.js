@@ -80,7 +80,7 @@ const teams = [
     captain: "Mihir Sagar Kulkarni", 
     players: [
       {name: "Mihir Sagar Kulkarni", price: 2100000},
-      {name: "Pranav Narayanan", price: 850000},
+      {name: "Pranav Narayan", price: 850000},
       {name: "Arya Jain", price: 325000},
       {name: "Vedang Krishna", price: 400000},
       {name: "Prasham Bhayani", price: 275000},
@@ -99,7 +99,7 @@ const teams = [
     players: [
       {name: "Vedang Chinhalli", price: 2600000},
       {name: "Divy Jakhotiya", price: 475000},
-      {name: "Aarush Nabhar",price:500000},
+      {name: "Aarush Nabar",price:500000},
       {name: "Ishan Deshpande", price: 200000},
       {name: "Rishabh Jain", price: 75000},
       {name: "Owais Ahmed", price: 125000},
