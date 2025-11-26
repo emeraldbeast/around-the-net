@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Around the Net BITS Goa</title>
+    <link rel="icon" href="/images/around-the-net-logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-button {
+            background-color: black;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 9999px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('page-loader');
+            if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
+            const video = document.getElementById('tt-video');
+            if (video) video.playbackRate = 0.5;
+        });
+    </script>
+</head>
+
+<body class="bg-gradient-to-br from-zinc-900 via-black to-zinc-800 text-white font-sans">
+
+    <div id="page-loader"
+        class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-[2000ms]">
+        <video id="tt-video" autoplay muted loop playsinline class="w-[500px] h-[500px]">
+            <source src="/animations/tt-loader.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
+        <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            Around the Net - BITS Goa
+        </div>
+        <div class="md:hidden">
+            <button id="hamburger"
+                class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">☰</button>
+        </div>
+        <ul id="navLinks" class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 
+         md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
+            <li>
+                <a href="/"
+                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+                    Homepage
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="gallery" class="min-h-screen w-full py-10 px-4 sm:px-8 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
+        <div class="flex justify-center">
+            <div class="flex items-center justify-between max-w-full sm:w-[700px] w-full px-2 sm:px-0">
+                <button id="prev" class="nav-button" aria-label="Previous photo">&#60;</button>
+                <div class="flex-1 flex justify-center">
+                    <img id="gallery-img" src="/atn-photos/photo1.jpg" alt="Photo 1"
+                        class="gallery-image rounded-xl shadow-2xl border-2 border-yellow-500" />
+                </div>
+                <button id="next" class="nav-button" aria-label="Next photo">&#62;</button>
+            </div>
+        </div>
+
+        <div id="caption" class="text-center text-yellow-100 mt-4 text-lg font-medium">
+            Photo 1 of 31
+        </div>
+
+        <div class="text-4xl mt-10 text-purple-400 font-bold text-center">
+            <h2>Auction</h2>
+        </div>
+    </div>
+
+    <script>
+        let current = 1;
+        const total = 31;
+        const img = document.getElementById('gallery-img');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        const caption = document.getElementById('caption');
+
+        function updateImage() {
+            img.style.opacity = 0;
+            setTimeout(() => {
+                img.src = `/atn-photos/photo${current}.jpg`;
+                img.alt = `Photo ${current}`;
+                img.style.opacity = 1;
+                caption.textContent = `Photo ${current} of ${total}`;
+            }, 150);
+        }
+
+        prev.onclick = () => {
+            current = current === 1 ? total : current - 1;
+            updateImage();
+        };
+
+        next.onclick = () => {
+            current = current === total ? 1 : current + 1;
+            updateImage();
+        };
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') prev.click();
+            if (e.key === 'ArrowRight') next.click();
+        });
+    </script>
+
+</body>
+
+</html>

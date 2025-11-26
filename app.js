@@ -26,6 +26,10 @@ app.get('/tournament/matches',(req,res)=>{
     res.render('matches')
 })
 
+app.get('/gallery',(req,res)=>{
+    res.render('gallery')
+})
+
 app.get('/auction', (req, res) => {
   const sortedPlayers = [];
 
