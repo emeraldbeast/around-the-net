@@ -14,6 +14,10 @@
       "dest": "/logos/$1"
     },
     {
+      "src": "/atn-photos/(.*)",
+      "dest": "/atn-photos/$1"
+    },
+    {
       "src": "/images/(.*)",
       "dest": "/images/$1"
     },

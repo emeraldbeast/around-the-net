@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the Net BITS Goa</title>
     <link rel="icon" href="/images/around-the-net-logo.png" type="image/png">
-    <!-- <img src="https://image.freepik.com/free-vector/detailed-table-tennis-championship-logo_23-2148649920.jpg" alt=""> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <style>
+        .gallery-image {
+            max-height: 600px;
+            width: auto;
+            object-fit: contain;
+        }
+    </style>
 </head>
 
 <body>
@@ -223,203 +229,246 @@
                     </div>
                 </a>
             </div>
-        </div>
-    </div>
 
-    <hr class="border-t-4 border-gray-400 w-full">
+            <hr class="border-t-4 mt-6 border-purple-400 w-full">
 
-    <footer id="contact-info"
-        class="bg-zinc-500 px-4 py-6 flex flex-col sm:flex-row sm:flex-wrap sm:justify-between items-start gap-6 text-white">
+            <div id="gallery" class="w-full py-10 px-8 overflow-hidden">
+                <div class="text-4xl text-yellow-600 font-bold mb-10 text-center">
+                    <h1>Gallery</h1>
+                </div>
 
-        <!-- Heading Line -->
-        <div class="w-full text-base sm:text-4xl font-semibold text-white border-b border-zinc-400 pb-2 sm:border-none">
-            Brought to you by
+                <div class="relative flex justify-center items-center">
+                    <img id="gallery-img" src="/atn-photos/photo1.jpg" alt="Photo 1"
+                        class="gallery-image rounded-lg shadow-lg" />
+
+                    <button id="prev"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-purple-600 hover:bg-purple-400 px-4 py-2 rounded-full text-2xl font-bold shadow-lg">&#8592;</button>
+                    <button id="next"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-purple-600 hover:bg-purple-400 px-4 py-2 rounded-full text-2xl font-bold shadow-lg">&#8594;</button>
+                </div>
+                <div class="text-4xl mt-6 text-yellow-600 font-bold text-center">
+                    <h2>Auction</h2>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Contributors -->
-        <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
-            <span class="font-semibold">Anvesh Mishra</span>
-            <span class="text-sm text-zinc-200">Organiser</span>
-            <span class="text-sm text-zinc-300">9650102446</span>
-        </div>
-        <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
-            <span class="font-semibold">Aayush Khetawat</span>
-            <span class="text-sm text-zinc-200">Organiser</span>
-            <span class="text-sm text-zinc-300">9982568100</span>
-        </div>
-        <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
-            <span class="font-semibold">Divyansh Gupta</span>
-            <span class="text-sm text-zinc-200">Organiser</span>
-            <span class="text-sm text-zinc-300">9201532031</span>
-        </div>
-        <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
-            <span class="font-semibold">Arya Vikas Jain</span>
-            <span class="text-sm text-zinc-200">Organiser</span>
-            <span class="text-sm text-zinc-300">9892884008</span>
-        </div>
-        <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
-            <span class="font-semibold">Dhananjay Bhattacharya</span>
-            <span class="text-sm text-zinc-200">Website Developer</span>
-            <span class="text-sm text-zinc-300">7036959133</span>
-        </div>
-        <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
-            <span class="font-semibold">Arihant Bhandari</span>
-            <span class="text-sm text-zinc-200">Website Developer</span>
-            <span class="text-sm text-zinc-300">9971617778</span>
-        </div>
-    </footer>
-    <script>
-        // Hamburger Menu Toggle
-        const btn = document.getElementById('hamburger');
-        const menu = document.getElementById('navLinks');
-        const links = menu.querySelectorAll('a');
+        <hr class="border-t-4 border-gray-400 w-full">
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+        <footer id="contact-info"
+            class="bg-zinc-500 px-4 py-6 flex flex-col sm:flex-row sm:flex-wrap sm:justify-between items-start gap-6 text-white">
 
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 768) {
-                    menu.classList.add('hidden');
-                }
+            <!-- Heading Line -->
+            <div
+                class="w-full text-base sm:text-4xl font-semibold text-white border-b border-zinc-400 pb-2 sm:border-none">
+                Brought to you by
+            </div>
+
+            <!-- Contributors -->
+            <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
+                <span class="font-semibold">Anvesh Mishra</span>
+                <span class="text-sm text-zinc-200">Organiser</span>
+                <span class="text-sm text-zinc-300">9650102446</span>
+            </div>
+            <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
+                <span class="font-semibold">Aayush Khetawat</span>
+                <span class="text-sm text-zinc-200">Organiser</span>
+                <span class="text-sm text-zinc-300">9982568100</span>
+            </div>
+            <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
+                <span class="font-semibold">Divyansh Gupta</span>
+                <span class="text-sm text-zinc-200">Organiser</span>
+                <span class="text-sm text-zinc-300">9201532031</span>
+            </div>
+            <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
+                <span class="font-semibold">Arya Vikas Jain</span>
+                <span class="text-sm text-zinc-200">Organiser</span>
+                <span class="text-sm text-zinc-300">9892884008</span>
+            </div>
+            <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
+                <span class="font-semibold">Dhananjay Bhattacharya</span>
+                <span class="text-sm text-zinc-200">Website Developer</span>
+                <span class="text-sm text-zinc-300">7036959133</span>
+            </div>
+            <div class="flex flex-col text-base sm:text-lg gap-1 border-b border-zinc-400 pb-2 sm:border-none">
+                <span class="font-semibold">Arihant Bhandari</span>
+                <span class="text-sm text-zinc-200">Website Developer</span>
+                <span class="text-sm text-zinc-300">9971617778</span>
+            </div>
+        </footer>
+        <script>
+            // Hamburger Menu Toggle
+            const btn = document.getElementById('hamburger');
+            const menu = document.getElementById('navLinks');
+            const links = menu.querySelectorAll('a');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
             });
-        });
 
-        // TV Slide Carousel Logic
-        const images = [
-            "/images/image1.png",
-            "/images/image2.png",
-            "/images/image3.png",
-            "/images/image4.png",
-            "/images/image5.png"
-        ];
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
 
-        let currentIndex = 0;
-        const wrapper = document.getElementById("carouselWrapper");
-        const img1 = document.getElementById("carouselImage1");
-        const img2 = document.getElementById("carouselImage2");
+            // TV Slide Carousel Logic
+            const images = [
+                "/images/image1.png",
+                "/images/image2.png",
+                "/images/image3.png",
+                "/images/image4.png",
+                "/images/image5.png"
+            ];
 
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            img2.src = images[currentIndex];
-            wrapper.style.transform = "translateX(-100%)";
+            let currentIndex = 0;
+            const wrapper = document.getElementById("carouselWrapper");
+            const img1 = document.getElementById("carouselImage1");
+            const img2 = document.getElementById("carouselImage2");
 
-            setTimeout(() => {
-                img1.src = img2.src;
-                wrapper.style.transition = "none";
-                wrapper.style.transform = "translateX(0)";
-                setTimeout(() => {
-                    wrapper.style.transition = "transform 0.7s ease-in-out";
-                }, 50);
-            }, 700);
-        }
-
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            img2.src = images[currentIndex];
-            wrapper.style.transform = "translateX(100%)";
-
-            setTimeout(() => {
-                img1.src = img2.src;
-                wrapper.style.transition = "none";
-                wrapper.style.transform = "translateX(0)";
-                setTimeout(() => {
-                    wrapper.style.transition = "transform 0.7s ease-in-out";
-                }, 50);
-            }, 700);
-        }
-
-        // Auto-slide every 2 seconds
-        setInterval(() => {
-            nextImage();
-        }, 3000);
-
-        function toggleCategory(cat) {
-            const section = document.getElementById(`category-${cat}`);
-            const icon = document.getElementById(`icon-${cat}`);
-            const isVisible = !section.classList.contains('hidden');
-
-            section.classList.toggle('hidden', isVisible);
-            icon.textContent = isVisible ? '+' : '−';
-        }
-
-        window.addEventListener("load", () => {
-            const logo = document.getElementById("logo");
-            const loader = document.getElementById("logo-loader");
-            const content = document.getElementById("main-content");
-
-            setTimeout(() => {
-                logo.classList.add("top-[-200px]", "scale-[0.6]");
-            }, 500);
-
-            setTimeout(() => {
-                loader.classList.add("opacity-0");
-                content.classList.remove("opacity-0");
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                img2.src = images[currentIndex];
+                wrapper.style.transform = "translateX(-100%)";
 
                 setTimeout(() => {
-                    loader.remove();
+                    img1.src = img2.src;
+                    wrapper.style.transition = "none";
+                    wrapper.style.transform = "translateX(0)";
+                    setTimeout(() => {
+                        wrapper.style.transition = "transform 0.7s ease-in-out";
+                    }, 50);
                 }, 700);
-            }, 1200);
-        });
-
-        const teamCards = document.querySelectorAll('.team-card');
-        let lastHighlighted = null;
-
-        function highlightMostVisibleCard() {
-            const viewportHeight = window.innerHeight;
-            let maxVisibleRatio = 0;
-            let cardToHighlight = null;
-            if (window.innerWidth >= 768) return;
-            teamCards.forEach(card => {
-                const rect = card.getBoundingClientRect();
-
-                const visibleHeight = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
-                const ratio = Math.max(0, visibleHeight) / rect.height; 
-
-                if (ratio > maxVisibleRatio) {
-                    maxVisibleRatio = ratio;
-                    cardToHighlight = card;
-                } else if (ratio === maxVisibleRatio && lastHighlighted === card) {
-                    cardToHighlight = card;
-                }
-            });
-
-            teamCards.forEach(card => {
-                const inner = card.querySelector('.team-inner');
-                if (inner) {
-                    inner.classList.remove(
-                        'scale-105',
-                        'shadow-yellow-500',
-                        'shadow-lg',
-                        'ring-2',
-                        'ring-yellow-400',
-                        'bg-yellow-100/10'
-                    );
-                }
-            });
-
-            if (cardToHighlight) {
-                const inner = cardToHighlight.querySelector('.team-inner');
-                if (inner) {
-                    inner.classList.add(
-                        'scale-105',
-                        'shadow-yellow-500',
-                        'shadow-lg',
-                        'ring-2',
-                        'ring-yellow-400',
-                        'bg-yellow-100/10'
-                    );
-                }
-                lastHighlighted = cardToHighlight;
             }
-        }
 
-        window.addEventListener('scroll', highlightMostVisibleCard);
-        window.addEventListener('resize', highlightMostVisibleCard);
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                img2.src = images[currentIndex];
+                wrapper.style.transform = "translateX(100%)";
 
-        highlightMostVisibleCard();
-    </script>
+                setTimeout(() => {
+                    img1.src = img2.src;
+                    wrapper.style.transition = "none";
+                    wrapper.style.transform = "translateX(0)";
+                    setTimeout(() => {
+                        wrapper.style.transition = "transform 0.7s ease-in-out";
+                    }, 50);
+                }, 700);
+            }
+
+            // Auto-slide every 2 seconds
+            setInterval(() => {
+                nextImage();
+            }, 3000);
+
+            function toggleCategory(cat) {
+                const section = document.getElementById(`category-${cat}`);
+                const icon = document.getElementById(`icon-${cat}`);
+                const isVisible = !section.classList.contains('hidden');
+
+                section.classList.toggle('hidden', isVisible);
+                icon.textContent = isVisible ? '+' : '−';
+            }
+
+            window.addEventListener("load", () => {
+                const logo = document.getElementById("logo");
+                const loader = document.getElementById("logo-loader");
+                const content = document.getElementById("main-content");
+
+                setTimeout(() => {
+                    logo.classList.add("top-[-200px]", "scale-[0.6]");
+                }, 500);
+
+                setTimeout(() => {
+                    loader.classList.add("opacity-0");
+                    content.classList.remove("opacity-0");
+
+                    setTimeout(() => {
+                        loader.remove();
+                    }, 700);
+                }, 1200);
+            });
+
+            const teamCards = document.querySelectorAll('.team-card');
+            let lastHighlighted = null;
+
+            function highlightMostVisibleCard() {
+                const viewportHeight = window.innerHeight;
+                let maxVisibleRatio = 0;
+                let cardToHighlight = null;
+                if (window.innerWidth >= 768) return;
+                teamCards.forEach(card => {
+                    const rect = card.getBoundingClientRect();
+
+                    const visibleHeight = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
+                    const ratio = Math.max(0, visibleHeight) / rect.height;
+
+                    if (ratio > maxVisibleRatio) {
+                        maxVisibleRatio = ratio;
+                        cardToHighlight = card;
+                    } else if (ratio === maxVisibleRatio && lastHighlighted === card) {
+                        cardToHighlight = card;
+                    }
+                });
+
+                teamCards.forEach(card => {
+                    const inner = card.querySelector('.team-inner');
+                    if (inner) {
+                        inner.classList.remove(
+                            'scale-105',
+                            'shadow-yellow-500',
+                            'shadow-lg',
+                            'ring-2',
+                            'ring-yellow-400',
+                            'bg-yellow-100/10'
+                        );
+                    }
+                });
+
+                if (cardToHighlight) {
+                    const inner = cardToHighlight.querySelector('.team-inner');
+                    if (inner) {
+                        inner.classList.add(
+                            'scale-105',
+                            'shadow-yellow-500',
+                            'shadow-lg',
+                            'ring-2',
+                            'ring-yellow-400',
+                            'bg-yellow-100/10'
+                        );
+                    }
+                    lastHighlighted = cardToHighlight;
+                }
+            }
+
+            window.addEventListener('scroll', highlightMostVisibleCard);
+            window.addEventListener('resize', highlightMostVisibleCard);
+
+            highlightMostVisibleCard();
+
+            let current = 1;
+            const total = 34;
+            const img = document.getElementById('gallery-img');
+            const prev = document.getElementById('prev');
+            const next = document.getElementById('next');
+
+            function updateImage() {
+                img.src = `/atn-photos/photo${current}.jpg`;
+                img.alt = `Photo ${current}`;
+            }
+
+            prev.onclick = () => {
+                current = current === 1 ? total : current - 1;
+                updateImage();
+            };
+
+            next.onclick = () => {
+                current = current === total ? 1 : current + 1;
+                updateImage();
+            };
+        </script>
 
 </body>
 
