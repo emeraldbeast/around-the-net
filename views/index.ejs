@@ -14,6 +14,25 @@
             width: auto;
             object-fit: contain;
         }
+
+        .nav-button {
+            background-color: black;
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 9999px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -237,14 +256,11 @@
                     <h1>Gallery</h1>
                 </div>
 
-                <div class="relative flex justify-center items-center">
+                <div class="flex items-center justify-center gap-6">
+                    <button id="prev" class="nav-button">&#60;</button>
                     <img id="gallery-img" src="/atn-photos/photo1.jpg" alt="Photo 1"
                         class="gallery-image rounded-lg shadow-lg" />
-
-                    <button id="prev"
-                        class="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-purple-600 hover:bg-purple-400 px-4 py-2 rounded-full text-2xl font-bold shadow-lg">&#8592;</button>
-                    <button id="next"
-                        class="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-purple-600 hover:bg-purple-400 px-4 py-2 rounded-full text-2xl font-bold shadow-lg">&#8594;</button>
+                    <button id="next" class="nav-button">&#62;</button>
                 </div>
                 <div class="text-4xl mt-6 text-yellow-600 font-bold text-center">
                     <h2>Auction</h2>
