@@ -74,7 +74,8 @@
         </ul>
     </div>
 
-    <div id="gallery" class="min-h-screen w-full py-10 px-4 sm:px-8 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
+    <div id="gallery"
+        class="min-h-screen w-full py-10 px-4 sm:px-8 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
         <div class="flex justify-center">
             <div class="flex items-center justify-between max-w-full sm:w-[700px] w-full px-2 sm:px-0">
                 <button id="prev" class="nav-button" aria-label="Previous photo">&#60;</button>
@@ -105,12 +106,22 @@
 
         function updateImage() {
             img.style.opacity = 0;
-            setTimeout(() => {
-                img.src = `/atn-photos/photo${current}.jpg`;
+            const newSrc = `/atn-photos/photo${current}.jpg`;
+            const preload = new Image();
+            preload.src = newSrc;
+
+            preload.onload = () => {
+                img.src = newSrc;
                 img.alt = `Photo ${current}`;
+                caption.textContent = `🖼️ Photo ${current} of ${total}`;
                 img.style.opacity = 1;
-                caption.textContent = `Photo ${current} of ${total}`;
-            }, 150);
+
+                const preloadNext = new Image();
+                preloadNext.src = `/atn-photos/photo${(current % total) + 1}.jpg`;
+
+                const preloadPrev = new Image();
+                preloadPrev.src = `/atn-photos/photo${(current - 2 + total) % total + 1}.jpg`;
+            };
         }
 
         prev.onclick = () => {
@@ -127,6 +138,8 @@
             if (e.key === 'ArrowLeft') prev.click();
             if (e.key === 'ArrowRight') next.click();
         });
+
+        updateImage();
     </script>
 
 </body>
