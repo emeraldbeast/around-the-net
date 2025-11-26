@@ -97,6 +97,22 @@
     </div>
 
     <script>
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('navLinks');
+        const links = menu.querySelectorAll('a');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+
         let current = 1;
         const total = 34;
         const img = document.getElementById('gallery-img');
