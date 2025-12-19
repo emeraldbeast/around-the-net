@@ -123,9 +123,8 @@
     const next = document.getElementById('next');
     const caption = document.getElementById('caption');
 
-    // Hybrid preload: previous + next 3
     function preloadAround(index) {
-      const preloadRange = 3; // preload next 3
+      const preloadRange = 3; 
       for (let i = -1; i <= preloadRange; i++) {
         let target = index + i;
         if (target < 1) target = total;
