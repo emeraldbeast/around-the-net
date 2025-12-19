@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Around the Net BITS Goa</title>
+    <title>News</title>
     <link rel="icon" href="/images/around-the-net-logo.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="/_vercel/insights/script.js"></script>
@@ -74,42 +74,40 @@
         </ul>
     </div>
 
-    <div id="gallery"
-        class="min-h-screen w-full py-10 px-4 sm:px-8 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
-        <div class="flex justify-center">
-            <div class="flex items-center justify-between max-w-full sm:w-[700px] w-full px-2 sm:px-0">
-                <button id="prev" class="nav-button" aria-label="Previous photo">&#60;</button>
-                <div class="flex-1 flex justify-center">
-                    <img id="gallery-img" src="/atn-photos/photo1.jpg" alt="Photo 1"
-                        class="gallery-image rounded-xl shadow-2xl border-2 border-yellow-500" />
-                </div>
-                <button id="next" class="nav-button" aria-label="Next photo">&#62;</button>
+    <div class="w-full py-12 px-4 sm:px-8 bg-gradient-to-br from-[#0f3460] via-[#16213e] to-[#1a1a2e]">
+        <section
+            class="event-section flex flex-col md:flex-row items-center gap-8 py-12 px-4 sm:px-8 border-b border-zinc-700">
+            <div class="md:w-1/2 text-yellow-100">
+                <h2 class="text-3xl text-center font-bold text-purple-400 mb-4">Auction</h2>
+                <p class="text-lg text-center leading-relaxed">
+                    The Around the Net Auction at BITS Goa was a vibrant celebration of creativity, community, and competition. From spirited bidding wars to moments of collaboration, the event brought together students in an atmosphere of excitement and camaraderie. Each highlight captured in the gallery reflects the energy that made the auction a cornerstone of the festival. Whether as a bidder, organizer, or spectator, everyone contributed to an unforgettable experience that showcased the collective spirit of the campus.
+                </p>
             </div>
-        </div>
 
-        <div id="caption" class="text-center text-yellow-100 mt-4 text-lg font-medium">
-            Photo 1 of 34
-        </div>
-
-        <div class="text-4xl mt-10 text-purple-400 font-bold text-center">
-            <h2>Auction</h2>
-        </div>
+            <div class="md:w-1/2">
+                <div class="flex items-center justify-between w-full max-w-full px-2 sm:px-0">
+                    <button id="prev" class="nav-button" aria-label="Previous photo">&#60;</button>
+                    <div class="flex-1 flex justify-center">
+                        <img id="gallery-img" src="/atn-auction/photo1.jpg" alt="Photo 1"
+                            class="gallery-image rounded-xl shadow-2xl border-2 border-yellow-500 max-w-full h-auto" />
+                    </div>
+                    <button id="next" class="nav-button" aria-label="Next photo">&#62;</button>
+                </div>
+                <div id="caption" class="text-center text-yellow-100 mt-4 text-lg font-medium">
+                    🖼️ Photo 1 of 25
+                </div>
+            </div>
+        </section>
     </div>
 
     <script>
         const btn = document.getElementById('hamburger');
         const menu = document.getElementById('navLinks');
         const links = menu.querySelectorAll('a');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
         links.forEach(link => {
             link.addEventListener('click', () => {
-                if (window.innerWidth < 768) {
-                    menu.classList.add('hidden');
-                }
+                if (window.innerWidth < 768) { menu.classList.add('hidden'); }
             });
         });
 
@@ -122,42 +120,31 @@
 
         function updateImage() {
             img.style.opacity = 0;
-            const newSrc = `/atn-photos/photo${current}.jpg`;
+            const newSrc = `/atn-auction/photo${current}.jpg`;
             const preload = new Image();
             preload.src = newSrc;
-
             preload.onload = () => {
                 img.src = newSrc;
                 img.alt = `Photo ${current}`;
                 caption.textContent = `🖼️ Photo ${current} of ${total}`;
                 img.style.opacity = 1;
-
                 const preloadNext = new Image();
-                preloadNext.src = `/atn-photos/photo${(current % total) + 1}.jpg`;
-
+                preloadNext.src = `/atn-auction/photo${(current % total) + 1}.jpg`;
                 const preloadPrev = new Image();
-                preloadPrev.src = `/atn-photos/photo${(current - 2 + total) % total + 1}.jpg`;
+                preloadPrev.src = `/atn-auction/photo${(current - 2 + total) % total + 1}.jpg`;
             };
         }
 
-        prev.onclick = () => {
-            current = current === 1 ? total : current - 1;
-            updateImage();
-        };
-
-        next.onclick = () => {
-            current = current === total ? 1 : current + 1;
-            updateImage();
-        };
+        prev.onclick = () => { current = current === 1 ? total : current - 1; updateImage(); };
+        next.onclick = () => { current = current === total ? 1 : current + 1; updateImage(); };
 
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') prev.click();
-            if (e.key === 'ArrowRight') next.click();
+            if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
+            if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
         });
 
         updateImage();
     </script>
-
 </body>
 
 </html>
