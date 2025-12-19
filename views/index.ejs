@@ -84,9 +84,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/gallery"
+                    <a href="/news"
                         class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
-                        Gallery
+                        News
                     </a>
                 </li>
                 <li>
@@ -443,27 +443,6 @@
             window.addEventListener('resize', highlightMostVisibleCard);
 
             highlightMostVisibleCard();
-
-            let current = 1;
-            const total = 34;
-            const img = document.getElementById('gallery-img');
-            const prev = document.getElementById('prev');
-            const next = document.getElementById('next');
-
-            function updateImage() {
-                img.src = `/atn-photos/photo${current}.jpg`;
-                img.alt = `Photo ${current}`;
-            }
-
-            prev.onclick = () => {
-                current = current === 1 ? total : current - 1;
-                updateImage();
-            };
-
-            next.onclick = () => {
-                current = current === total ? 1 : current + 1;
-                updateImage();
-            };
         </script>
 
 </body>
