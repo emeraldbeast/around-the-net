@@ -2,149 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News</title>
-    <link rel="icon" href="/images/around-the-net-logo.png" type="image/png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News</title>
+  <link rel="icon" href="/images/around-the-net-logo.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
 
-        .nav-button {
-            background-color: black;
-            color: white;
-            width: 48px;
-            height: 48px;
-            border-radius: 9999px;
-            font-size: 24px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+    .nav-button {
+      background-color: black;
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-        .nav-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-        }
-    </style>
-    <script>
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('page-loader');
-            if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
-            const video = document.getElementById('tt-video');
-            if (video) video.playbackRate = 0.5;
-        });
-    </script>
+    .nav-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+  </style>
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('page-loader');
+      if (loader) loader.classList.add('opacity-0', 'pointer-events-none');
+      const video = document.getElementById('tt-video');
+      if (video) video.playbackRate = 0.5;
+    });
+  </script>
 </head>
 
 <body class="bg-gradient-to-br from-zinc-900 via-black to-zinc-800 text-white font-sans">
 
-    <div id="page-loader"
-        class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-[2000ms]">
-        <video id="tt-video" autoplay muted loop playsinline class="w-[500px] h-[500px]">
-            <source src="/animations/tt-loader.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-    </div>
+  <div id="page-loader"
+    class="fixed inset-0 bg-white z-[100] flex items-center justify-center transition-opacity duration-[2000ms]">
+    <video id="tt-video" autoplay muted loop playsinline class="w-[500px] h-[500px]">
+      <source src="/animations/tt-loader.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-    <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
-        <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-            Around the Net - BITS Goa
-        </div>
-        <div class="md:hidden">
-            <button id="hamburger"
-                class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">☰</button>
-        </div>
-        <ul id="navLinks" class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 
+  <div id="top" class="header sticky top-0 z-50 bg-zinc-900 px-8 py-4 flex justify-between items-center">
+    <div class="left cursor-pointer text-xl text-yellow-100 bg-zinc-900 px-4 py-2 rounded shadow-md transition"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+      Around the Net - BITS Goa
+    </div>
+    <div class="md:hidden">
+      <button id="hamburger"
+        class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">☰</button>
+    </div>
+    <ul id="navLinks"
+      class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 
          md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
-            <li>
-                <a href="/"
-                    class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
-                    Homepage
-                </a>
-            </li>
-        </ul>
-    </div>
+      <li>
+        <a href="/"
+          class="bg-transparent md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">
+          Homepage
+        </a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="w-full py-12 px-4 sm:px-8 bg-gradient-to-br from-[#0f3460] via-[#16213e] to-[#1a1a2e]">
-        <section
-            class="event-section flex flex-col md:flex-row items-center gap-8 py-12 px-4 sm:px-8 border-b border-zinc-700">
-            <div class="md:w-1/2 text-yellow-100">
-                <h2 class="text-3xl text-center font-bold text-purple-400 mb-4">Auction</h2>
-                <p class="text-lg text-center leading-relaxed">
-                    The Around the Net Auction at BITS Goa was a vibrant celebration of creativity, community, and competition. From spirited bidding wars to moments of collaboration, the event brought together students in an atmosphere of excitement and camaraderie. Each highlight captured in the gallery reflects the energy that made the auction a cornerstone of the festival. Whether as a bidder, organizer, or spectator, everyone contributed to an unforgettable experience that showcased the collective spirit of the campus.
-                </p>
-            </div>
+  <div class="w-full py-12 px-4 sm:px-8 bg-gradient-to-br from-[#0f3460] via-[#16213e] to-[#1a1a2e]">
+    <section
+      class="event-section flex flex-col md:flex-row items-center gap-8 py-12 px-4 sm:px-8 border-b border-zinc-700">
+      <div class="md:w-1/2 text-yellow-100">
+        <h2 class="text-3xl text-center font-bold text-purple-400 mb-4">Auction</h2>
+        <p class="text-lg text-center leading-relaxed">
+          The Around the Net Auction at BITS Goa was a vibrant celebration of creativity, community, and competition.
+          From spirited bidding wars to moments of collaboration, the event brought together students in an atmosphere
+          of excitement and camaraderie. Each highlight captured in the gallery reflects the energy that made the auction
+          a cornerstone of the festival. Whether as a bidder, organizer, or spectator, everyone contributed to an
+          unforgettable experience that showcased the collective spirit of the campus.
+        </p>
+      </div>
 
-            <div class="md:w-1/2">
-                <div class="flex items-center justify-between w-full max-w-full px-2 sm:px-0">
-                    <button id="prev" class="nav-button" aria-label="Previous photo">&#60;</button>
-                    <div class="flex-1 flex justify-center">
-                        <img id="gallery-img" src="/atn-auction/photo1.jpg" alt="Photo 1"
-                            class="gallery-image rounded-xl shadow-2xl border-2 border-yellow-500 max-w-full h-auto" />
-                    </div>
-                    <button id="next" class="nav-button" aria-label="Next photo">&#62;</button>
-                </div>
-                <div id="caption" class="text-center text-yellow-100 mt-4 text-lg font-medium">
-                    🖼️ Photo 1 of 25
-                </div>
-            </div>
-        </section>
-    </div>
+      <div class="md:w-1/2">
+        <div class="flex items-center justify-between w-full max-w-full px-2 sm:px-0">
+          <button id="prev" class="nav-button" aria-label="Previous photo">&#60;</button>
+          <div class="flex-1 flex justify-center">
+            <img id="gallery-img" src="/atn-auction/photo1.jpg" alt="Photo 1"
+              class="gallery-image rounded-xl shadow-2xl border-2 border-yellow-500 max-w-full h-auto" />
+          </div>
+          <button id="next" class="nav-button" aria-label="Next photo">&#62;</button>
+        </div>
+        <div id="caption" class="text-center text-yellow-100 mt-4 text-lg font-medium">
+          🖼️ Photo 1 of 25
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <script>
-        const btn = document.getElementById('hamburger');
-        const menu = document.getElementById('navLinks');
-        const links = menu.querySelectorAll('a');
-        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 768) { menu.classList.add('hidden'); }
-            });
-        });
+  <script>
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('navLinks');
+    const links = menu.querySelectorAll('a');
+    btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 768) { menu.classList.add('hidden'); }
+      });
+    });
 
-        let current = 1;
-        const total = 25;
-        const img = document.getElementById('gallery-img');
-        const prev = document.getElementById('prev');
-        const next = document.getElementById('next');
-        const caption = document.getElementById('caption');
+    let current = 1;
+    const total = 25;
+    const img = document.getElementById('gallery-img');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    const caption = document.getElementById('caption');
 
-        function updateImage() {
-            img.style.opacity = 0;
-            const newSrc = `/atn-auction/photo${current}.jpg`;
-            const preload = new Image();
-            preload.src = newSrc;
-            preload.onload = () => {
-                img.src = newSrc;
-                img.alt = `Photo ${current}`;
-                caption.textContent = `🖼️ Photo ${current} of ${total}`;
-                img.style.opacity = 1;
-                const preloadNext = new Image();
-                preloadNext.src = `/atn-auction/photo${(current % total) + 1}.jpg`;
-                const preloadPrev = new Image();
-                preloadPrev.src = `/atn-auction/photo${(current - 2 + total) % total + 1}.jpg`;
-            };
-        }
+    // Hybrid preload: previous + next 3
+    function preloadAround(index) {
+      const preloadRange = 3; // preload next 3
+      for (let i = -1; i <= preloadRange; i++) {
+        let target = index + i;
+        if (target < 1) target = total;
+        if (target > total) target = target % total;
+        const preloadImg = new Image();
+        preloadImg.src = `/atn-auction/photo${target}.jpg`;
+      }
+    }
 
-        prev.onclick = () => { current = current === 1 ? total : current - 1; updateImage(); };
-        next.onclick = () => { current = current === total ? 1 : current + 1; updateImage(); };
+    function updateImage() {
+      img.style.opacity = 0;
+      const newSrc = `/atn-auction/photo${current}.jpg`;
+      const preload = new Image();
+      preload.src = newSrc;
+      preload.onload = () => {
+        img.src = newSrc;
+        img.alt = `Photo ${current}`;
+        caption.textContent = `🖼️ Photo ${current} of ${total}`;
+        img.style.opacity = 1;
+        preloadAround(current);
+      };
+    }
 
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
-            if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
-        });
+    prev.onclick = () => { current = current === 1 ? total : current - 1; updateImage(); };
+    next.onclick = () => { current = current === total ? 1 : current + 1; updateImage(); };
 
-        updateImage();
-    </script>
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
+    });
+
+    updateImage();
+  </script>
 </body>
 
 </html>
