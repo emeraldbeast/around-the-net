@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
-const port = process.env.port||3000;
+const port = process.env.port || 3000;
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
-const teams = require('./teams'); 
+const teams = require('./teams');
+const matchdata = require('./matchdata');
 // const mongoose = require("mongoose");
 // const User = require('./modules/user');
 
@@ -14,20 +15,31 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.get('/',(req,res)=>{
-    res.render("index"); 
+app.get('/', (req, res) => {
+  res.render("index");
 })
 
-app.get('/tournament',(req,res)=>{
-    res.render('tournament')
+app.get('/tournament', (req, res) => {
+  res.render('tournament')
 })
 
-app.get('/tournament/matches',(req,res)=>{
-    res.render('matches')
+app.get('/tournament/matches', (req, res) => {
+  res.render('matches',{matchdata})
 })
 
-app.get('/news',(req,res)=>{
-    res.render('news')
+app.get('/tournament/matches/:id', (req, res) => {
+  const matchId = req.params.id;
+  const match = matchdata.find(m => m.id === matchId);
+
+  if (!match) {
+    return res.status(404).render('404', { message: "Match not found." });
+  }
+
+  res.render('match-detail', { match });
+});
+
+app.get('/news', (req, res) => {
+  res.render('news')
 })
 
 app.get('/auction', (req, res) => {
