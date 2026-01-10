@@ -3,7 +3,8 @@ const matches = [
     id: "match-1",
     teamA: "Stardust Smashaders",
     teamB: "Feni Flickers",
-    status: "Live",
+    score: "3-4",
+    status: "Past",
     submatches: [
       {
         game: "Singles A",
