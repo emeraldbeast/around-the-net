@@ -1,8 +1,8 @@
 const matches = [
   {
     id: "match-1",
-    teamA: "Feni Flickers",
-    teamB: "Stardust Smashaders",
+    teamA: "Stardust Smashaders",
+    teamB: "Feni Flickers",
     status: "Live",
     submatches: [
       {
