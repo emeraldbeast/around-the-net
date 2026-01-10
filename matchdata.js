@@ -23,32 +23,32 @@ const matches = [
       },
       {
         game: "Singles C",
-        playerA: "Tanay",
-        playerB: "Animesh",
-        games: ["1-11", "-", "-"],
-        winner: null,
-        status: "Ongoing"
+        playerA: "Animesh",
+        playerB: "Tanay",
+        games: ["1-11", "", "-"],
+        winner: "Animesh",
+        status: "Completed"
       },
       {
         game: "Doubles",
-        playerA: "Vatsal & Jatin",
-        playerB: "Manas & Shrish",
+        playerA: "Manas & Shrish",
+        playerB: "Vatsal & Jatin",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
         status: "Upcoming"
       },
       {
         game: "Singles D",
-        playerA: "Veer",
-        playerB: "Abhinav",
+        playerA: "Abhinav",
+        playerB: "Veer",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
         status: "Upcoming"
       },
       {
         game: "Singles E",
-        playerA: "Aarush",
-        playerB: "Ammar",
+        playerA: "Ammar",
+        playerB: "Aarush",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
         status: "Upcoming"
