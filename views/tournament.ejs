@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon"
-        href="/images/around-the-net-logo.png"
-        type="image/png">
+    <link rel="icon" href="/images/around-the-net-logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tournament</title>
@@ -272,8 +270,14 @@
             const rows = Array.from(tbody.querySelectorAll("tr"));
 
             rows.sort((a, b) => {
+                const winsA = parseInt(a.children[2].textContent.trim()) || 0;
+                const winsB = parseInt(b.children[2].textContent.trim()) || 0;
                 const pointsA = parseInt(a.children[4].textContent.trim()) || 0;
                 const pointsB = parseInt(b.children[4].textContent.trim()) || 0;
+
+                if (winsB !== winsA) {
+                    return winsB - winsA;
+                }
                 return pointsB - pointsA;
             });
 
