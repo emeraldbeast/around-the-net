@@ -17,17 +17,17 @@ const matches = [
         game: "Singles B",
         playerA: "Abhinav",
         playerB: "Aarush",
-        games: ["6-11", "-", "-"],
-        winner: null,
-        status: "Ongoing"
+        games: ["6-11", "8-11", "-"],
+        winner: "Aarush",
+        status: "Completed"
       },
       {
         game: "Singles C",
         playerA: "Tanay",
         playerB: "Animesh",
-        games: ["Scheduled", "Scheduled", "Scheduled"],
+        games: ["-", "-", "-"],
         winner: null,
-        status: "Upcoming"
+        status: "Ongoing"
       },
       {
         game: "Doubles",
