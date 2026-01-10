@@ -49,9 +49,9 @@ const matches = [
         game: "Singles E",
         playerA: "Ammar",
         playerB: "Aarush",
-        games: ["11-7", "12-14", "-"],
-        winner: null,
-        status: "Ongoing"
+        games: ["11-7", "12-14", "4-11"],
+        winner: "Aarush",
+        status: "Completed"
       }
     ]
   }
