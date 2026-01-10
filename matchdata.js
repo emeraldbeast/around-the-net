@@ -25,7 +25,7 @@ const matches = [
         game: "Singles C",
         playerA: "Animesh",
         playerB: "Tanay",
-        games: ["1-11", "", "-"],
+        games: ["11-1", "11-4", "-"],
         winner: "Animesh",
         status: "Completed"
       },
@@ -33,9 +33,9 @@ const matches = [
         game: "Doubles",
         playerA: "Manas & Shrish",
         playerB: "Vatsal & Jatin",
-        games: ["Scheduled", "Scheduled", "Scheduled"],
+        games: ["-", "-", "-"],
         winner: null,
-        status: "Upcoming"
+        status: "Ongoing"
       },
       {
         game: "Singles D",
