@@ -17,9 +17,9 @@ const matches = [
         game: "Singles B",
         playerA: "Abhinav",
         playerB: "Aarush",
-        games: ["Scheduled", "Scheduled", "Scheduled"],
+        games: ["-", "-", "-"],
         winner: null,
-        status: "Upcoming"
+        status: "Live"
       },
       {
         game: "Singles C",
