@@ -3,15 +3,15 @@ const matches = [
     id: "match-1",
     teamA: "Feni Flickers",
     teamB: "Stardust Smashaders",
-    status: "Upcoming",
+    status: "Live",
     submatches: [
       {
         game: "Singles A",
         playerA: "Ammar",
         playerB: "Veer",
-        games: ["Scheduled", "Scheduled", "Scheduled"],
+        games: ["-", "-", "-"],
         winner: null,
-        status: "Upcoming"
+        status: "Ongoing"
       },
       {
         game: "Singles B",
