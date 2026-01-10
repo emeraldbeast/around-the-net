@@ -7,7 +7,7 @@ const matches = [
     submatches: [
       {
         game: "Singles A",
-        playerA: "Abhinav",
+        playerA: "Ammar",
         playerB: "Veer",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
@@ -15,7 +15,7 @@ const matches = [
       },
       {
         game: "Singles B",
-        playerA: "Ammar",
+        playerA: "Abhinav",
         playerB: "Aarush",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
@@ -23,7 +23,7 @@ const matches = [
       },
       {
         game: "Singles C",
-        playerA: "Vatsal",
+        playerA: "Tanay",
         playerB: "Animesh",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
@@ -31,8 +31,8 @@ const matches = [
       },
       {
         game: "Doubles",
-        playerA: "Tanay & Jatin",
-        playerB: "Aaditya & Shrish",
+        playerA: "Vatsal & Jatin",
+        playerB: "Manas & Shrish",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
         status: "Upcoming"
@@ -40,7 +40,7 @@ const matches = [
       {
         game: "Singles D",
         playerA: "Veer",
-        playerB: "Ammar",
+        playerB: "Abhinav",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
         status: "Upcoming"
@@ -48,7 +48,7 @@ const matches = [
       {
         game: "Singles E",
         playerA: "Aarush",
-        playerB: "Abhinav",
+        playerB: "Ammar",
         games: ["Scheduled", "Scheduled", "Scheduled"],
         winner: null,
         status: "Upcoming"
