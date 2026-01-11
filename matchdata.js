@@ -1,6 +1,7 @@
 const matches = [
   {
     id: "match-1",
+    date:"10th January",
     teamA: "Stardust Smashaders",
     teamB: "Feni Flickers",
     score: "3-4",
@@ -58,6 +59,7 @@ const matches = [
   },
   {
     id: "match-2",
+    date:"TBA",
     teamA: "Backhand Blitzers",
     teamB: "The Batmen",
     score: "0-0",
