@@ -59,7 +59,7 @@ const matches = [
   },
   {
     id: "match-2",
-    date:"TBA",
+    date:"13th January",
     teamA: "Backhand Blitzers",
     teamB: "The Batmen",
     score: "0-0",
@@ -114,7 +114,66 @@ const matches = [
         status: "Upcoming"
       }
     ]
+  },
+  {
+    id: "match-3",
+    date:"13th January",
+    teamA: "Sancoale Smashers",
+    teamB: "High Rankers",
+    score: "0-0",
+    status: "Upcoming",
+    submatches: [
+      {
+        game: "Singles A",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["Scheduled", "Scheduled", "Scheduled"],
+        winner: null,
+        status: "Upcoming"
+      },
+      {
+        game: "Singles B",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["Scheduled", "Scheduled", "Scheduled"],
+        winner: null,
+        status: "Upcoming"
+      },
+      {
+        game: "Singles C",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["Scheduled", "Scheduled", "Scheduled"],
+        winner: null,
+        status: "Upcoming"
+      },
+      {
+        game: "Doubles",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["Scheduled", "Scheduled", "Scheduled"],
+        winner: null,
+        status: "Upcoming"
+      },
+      {
+        game: "Singles D",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["Scheduled", "Scheduled", "Scheduled"],
+        winner: null,
+        status: "Upcoming"
+      },
+      {
+        game: "Singles E",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["Scheduled", "Scheduled", "Scheduled"],
+        winner: null,
+        status: "Upcoming"
+      }
+    ]
   }
+  
 ];
 
 module.exports = matches;
