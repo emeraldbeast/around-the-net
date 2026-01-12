@@ -14,8 +14,6 @@ const teams = [
       {name: "Pearl Jakasaniya", price: 25000},
       {name: "Anirudh Kumar", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "stardust-smashaders",
@@ -32,8 +30,6 @@ const teams = [
       {name: "Manas Kulkarni", price: 400000},
       {name: "Yash Phansalkar", price: 50000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "the-batmen",
@@ -51,8 +47,6 @@ const teams = [
       {name: "Samar Suraj Nayak", price: 100000},
       {name: "Prateek Panjikar", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "the-untouchables",
@@ -70,8 +64,6 @@ const teams = [
       {name: "Tanmay Srivastava", price: 100000},
       {name: "Aditya Dey", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "pong-stars",
@@ -88,8 +80,6 @@ const teams = [
       {name: "Arnav Namdeo", price: 25000},
       {name: "Japjeet Singh Bhatia", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "ball-breakers",
@@ -106,8 +96,6 @@ const teams = [
       {name: "Owais Ahmed", price: 125000},
       {name: "Parth Shah", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "high-rankers",
@@ -124,8 +112,6 @@ const teams = [
       {name: "Shaurya Mundra", price: 50000},
       {name: "Rithwik Arun", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "sancoale-smashers",
@@ -145,8 +131,6 @@ const teams = [
       {name: "Harshwardhan Shah", price: 50000},
       {name: "Chaitanya Joshi", price: 50000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "blade-runners",
@@ -164,8 +148,6 @@ const teams = [
       {name: "Sankeert Madyalkar", price: 50000},
       {name: "Akarsh Sinha", price: 25000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   },
   {
     id: "feni-flickers",
@@ -182,8 +164,6 @@ const teams = [
       {name: "Rishabh Sahay", price: 50000},
       {name: "Bhavik Jain", price: 50000}
     ]
-    // Add players in this format, makes it easier for setting up an auction stats page
-    // Add the captain name first, then add all the other players name
   }
 ];
 
