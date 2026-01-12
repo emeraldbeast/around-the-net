@@ -63,15 +63,15 @@ const matches = [
     teamA: "Backhand Blitzers",
     teamB: "The Batmen",
     score: "0-0",
-    status: "Upcoming",
+    status: "Upcoming",//Change this to Live when match starts
     submatches: [
       {
         game: "Singles A",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["Scheduled", "Scheduled", "Scheduled"],
+        games: ["Scheduled", "Scheduled", "Scheduled"],//When Match starts, replace Scheduled with - - - 
         winner: null,
-        status: "Upcoming"
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles B",
