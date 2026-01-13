@@ -120,8 +120,8 @@ const matches = [
     date:"13th January",
     teamA: "Sancoale Smashers",
     teamB: "High Rankers",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "4-1",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -151,9 +151,9 @@ const matches = [
         game: "Doubles",
         playerA: "Arindam & Harshwardhan",
         playerB: "Khushi & Omkar",
-        games: ["11-8", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-8", "11-7", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Arindam & Harshwardhan",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -161,7 +161,7 @@ const matches = [
         playerB: "Tanmay",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did not play"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -169,7 +169,7 @@ const matches = [
         playerB: "Aadinath",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did not play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   }
