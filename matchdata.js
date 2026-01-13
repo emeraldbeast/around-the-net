@@ -62,8 +62,8 @@ const matches = [
     date:"13th January",
     teamA: "Backhand Blitzers",
     teamB: "The Batmen",
-    score: "0-0",
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "4-3",
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -109,9 +109,9 @@ const matches = [
         game: "Singles E",
         playerA: "Vaidik",
         playerB: "Vidit",
-        games: ["11-3", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-3", "13-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Vaidik",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },
