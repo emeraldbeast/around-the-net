@@ -17,20 +17,16 @@
   </div>
 
   <div id="tab-content" class="w-full max-w-2xl">
-    <!-- Live Matches -->
     <div data-content="Live">
       <% matchdata.filter(m => m.status === "Live").forEach(m => { %>
         <a href="/tournament/matches/<%= m.id %>">
           <div class="mb-4 rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
-            <!-- Blue header -->
             <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
               Match Number: <%= m.id.split("-")[1] %>
             </div>
-            <!-- Date -->
             <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
               Date: <%= m.date %>
             </div>
-            <!-- Teams -->
             <div class="grid grid-cols-2 divide-x divide-gray-600 bg-gray-800 text-center rounded-b-lg">
               <div class="p-4 font-bold text-lg text-yellow-300"><%= m.teamA %></div>
               <div class="p-4 font-bold text-lg text-yellow-300"><%= m.teamB %></div>
@@ -40,20 +36,16 @@
       <% }) %>
     </div>
 
-    <!-- Upcoming Matches -->
     <div data-content="Upcoming" class="hidden">
       <% matchdata.filter(m => m.status === "Upcoming").forEach(m => { %>
         <a href="/tournament/matches/<%= m.id %>">
           <div class="mb-4 rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
-            <!-- Blue header -->
             <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
               Match Number: <%= m.id.split("-")[1] %>
             </div>
-            <!-- Date -->
             <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
               Date: <%= m.date %>
             </div>
-            <!-- Teams -->
             <div class="grid grid-cols-2 divide-x divide-gray-600 bg-gray-800 text-center rounded-b-lg">
               <div class="p-4 font-bold text-lg text-blue-300"><%= m.teamA %></div>
               <div class="p-4 font-bold text-lg text-blue-300"><%= m.teamB %></div>
@@ -63,7 +55,6 @@
       <% }) %>
     </div>
 
-    <!-- Past Matches -->
     <div data-content="Past" class="hidden">
       <% matchdata.filter(m => m.status === "Past").forEach(m => { 
            const [scoreA, scoreB] = m.score ? m.score.split("-").map(Number) : [0,0];
@@ -72,15 +63,12 @@
       %>
         <a href="/tournament/matches/<%= m.id %>">
           <div class="mb-4 rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
-            <!-- Blue header -->
             <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
               Match Number: <%= m.id.split("-")[1] %>
             </div>
-            <!-- Date -->
             <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
               Date: <%= m.date %>
             </div>
-            <!-- Teams -->
             <div class="grid grid-cols-2 divide-x divide-gray-600 text-center">
               <div class="p-4 font-bold text-lg <%= teamAClass %>"><%= m.teamA %></div>
               <div class="p-4 font-bold text-lg <%= teamBClass %>"><%= m.teamB %></div>
