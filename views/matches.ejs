@@ -1,88 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="/images/around-the-net-logo.png" type="image/png">
   <title>All Matches</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-6">
-  <h1 class="text-3xl font-bold mb-6 text-center">All Matches</h1>
 
-  <div class="flex space-x-4 mb-8">
-    <button class="tab-btn px-5 py-2 rounded-full font-semibold bg-yellow-400 text-black" data-tab="Live">LIVE</button>
-    <button class="tab-btn px-5 py-2 rounded-full font-semibold bg-gray-700 hover:bg-gray-600" data-tab="Upcoming">Upcoming</button>
-    <button class="tab-btn px-5 py-2 rounded-full font-semibold bg-gray-700 hover:bg-gray-600" data-tab="Past">Past</button>
+<body class="bg-gray-900 text-white min-h-screen">
+
+  <div id="top" class="sticky top-0 z-50 relative bg-gradient-to-br from-[#0f3460] via-[#16213e] to-[#1a1a2e] px-8 py-4 flex justify-between items-center shadow-lg border-b border-zinc-700">
+    <div class="text-2xl font-bold text-yellow-100 px-4 py-2 cursor-pointer transition"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+      Around the Net - BITS Goa
+    </div>
+
+    <div class="md:hidden">
+      <button id="hamburger" class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">
+        ☰
+      </button>
+    </div>
+
+    <ul id="navLinks"
+      class="hidden flex-col absolute top-full right-0 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 
+             md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
+      <li><a href="/tournament" class="md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">Points Table</a></li>
+      <li><a href="/" class="md:bg-gray-500 md:hover:bg-gray-700 text-yellow-100 px-4 py-2 rounded shadow-md transition">Homepage</a></li>
+    </ul>
   </div>
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">All Matches</h1>
 
-  <div id="tab-content" class="w-full max-w-2xl">
-    <div data-content="Live">
-      <% matchdata.filter(m => m.status === "Live").forEach(m => { %>
-        <a href="/tournament/matches/<%= m.id %>">
-          <div class="mb-4 rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
-            <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
-              Match Number: <%= m.id.split("-")[1] %>
-            </div>
-            <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
-              Date: <%= m.date %>
-            </div>
-            <div class="grid grid-cols-2 divide-x divide-gray-600 bg-gray-800 text-center rounded-b-lg">
-              <div class="p-4 font-bold text-lg text-yellow-300"><%= m.teamA %></div>
-              <div class="p-4 font-bold text-lg text-yellow-300"><%= m.teamB %></div>
-            </div>
-          </div>
-        </a>
-      <% }) %>
+    <div class="flex space-x-4 mb-8 justify-center">
+      <button class="tab-btn px-5 py-2 rounded-full font-semibold bg-yellow-400 text-black" data-tab="Live">LIVE</button>
+      <button class="tab-btn px-5 py-2 rounded-full font-semibold bg-gray-700 hover:bg-gray-600" data-tab="Upcoming">Upcoming</button>
+      <button class="tab-btn px-5 py-2 rounded-full font-semibold bg-gray-700 hover:bg-gray-600" data-tab="Past">Past</button>
     </div>
 
-    <div data-content="Upcoming" class="hidden">
-      <% matchdata.filter(m => m.status === "Upcoming").forEach(m => { %>
-        <a href="/tournament/matches/<%= m.id %>">
-          <div class="mb-4 rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
-            <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
-              Match Number: <%= m.id.split("-")[1] %>
-            </div>
-            <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
-              Date: <%= m.date %>
-            </div>
-            <div class="grid grid-cols-2 divide-x divide-gray-600 bg-gray-800 text-center rounded-b-lg">
-              <div class="p-4 font-bold text-lg text-blue-300"><%= m.teamA %></div>
-              <div class="p-4 font-bold text-lg text-blue-300"><%= m.teamB %></div>
-            </div>
-          </div>
-        </a>
-      <% }) %>
-    </div>
-
-    <div data-content="Past" class="hidden">
-      <% matchdata.filter(m => m.status === "Past").forEach(m => { 
-           const [scoreA, scoreB] = m.score ? m.score.split("-").map(Number) : [0,0];
-           const teamAClass = scoreA > scoreB ? "bg-green-600 text-white" : "bg-red-600 text-white";
-           const teamBClass = scoreB > scoreA ? "bg-green-600 text-white" : "bg-red-600 text-white";
-      %>
-        <a href="/tournament/matches/<%= m.id %>">
-          <div class="mb-4 rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
-            <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
-              Match Number: <%= m.id.split("-")[1] %>
-            </div>
-            <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
-              Date: <%= m.date %>
-            </div>
-            <div class="grid grid-cols-2 divide-x divide-gray-600 text-center">
-              <div class="p-4 font-bold text-lg <%= teamAClass %>"><%= m.teamA %></div>
-              <div class="p-4 font-bold text-lg <%= teamBClass %>"><%= m.teamB %></div>
-            </div>
-            <% if (m.score) { %>
-              <div class="bg-gray-900 text-center py-3 rounded-b-lg">
-                <p class="text-xl font-bold text-yellow-300">Final Score: <%= m.score %></p>
+    <div id="tab-content" class="space-y-6">
+      <div data-content="Live">
+        <% matchdata.filter(m => m.status === "Live").forEach(m => { %>
+          <a href="/tournament/matches/<%= m.id %>">
+            <div class="rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
+              <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
+                Match Number: <%= m.id.split("-")[1] %>
               </div>
-            <% } %>
-          </div>
-        </a>
-      <% }) %>
+              <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
+                Date: <%= m.date %>
+              </div>
+              <div class="grid grid-cols-2 divide-x divide-gray-600 bg-gray-800 text-center rounded-b-lg">
+                <div class="p-4 font-bold text-lg text-yellow-300"><%= m.teamA %></div>
+                <div class="p-4 font-bold text-lg text-yellow-300"><%= m.teamB %></div>
+              </div>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+
+      <div data-content="Upcoming" class="hidden">
+        <% matchdata.filter(m => m.status === "Upcoming").forEach(m => { %>
+          <a href="/tournament/matches/<%= m.id %>">
+            <div class="rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
+              <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
+                Match Number: <%= m.id.split("-")[1] %>
+              </div>
+              <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
+                Date: <%= m.date %>
+              </div>
+              <div class="grid grid-cols-2 divide-x divide-gray-600 bg-gray-800 text-center rounded-b-lg">
+                <div class="p-4 font-bold text-lg text-blue-300"><%= m.teamA %></div>
+                <div class="p-4 font-bold text-lg text-blue-300"><%= m.teamB %></div>
+              </div>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+
+      <div data-content="Past" class="hidden">
+        <% matchdata.filter(m => m.status === "Past").sort((a, b) => {
+       const numA = parseInt(a.id.split("-")[1], 10);
+       const numB = parseInt(b.id.split("-")[1], 10);
+       return numB - numA; 
+     }).forEach(m => {
+          const [scoreA, scoreB] = m.score ? m.score.split("-").map(Number) : [0, 0];
+          const teamAClass = scoreA > scoreB ? "bg-green-600 text-white" : "bg-red-600 text-white";
+          const teamBClass = scoreB > scoreA ? "bg-green-600 text-white" : "bg-red-600 text-white";
+        %>
+          <a href="/tournament/matches/<%= m.id %>">
+            <div class="rounded-lg shadow-lg border border-gray-700 hover:bg-gray-700 transition">
+              <div class="bg-blue-600 text-white text-center font-semibold text-sm py-2 rounded-t-lg">
+                Match Number: <%= m.id.split("-")[1] %>
+              </div>
+              <div class="bg-gray-700 text-center text-gray-300 text-sm py-1">
+                Date: <%= m.date %>
+              </div>
+              <div class="grid grid-cols-2 divide-x divide-gray-600 text-center">
+                <div class="p-4 font-bold text-lg <%= teamAClass %>"><%= m.teamA %></div>
+                <div class="p-4 font-bold text-lg <%= teamBClass %>"><%= m.teamB %></div>
+              </div>
+              <% if (m.score) { %>
+                <div class="bg-gray-900 text-center py-3 rounded-b-lg">
+                  <p class="text-xl font-bold text-yellow-300">Final Score: <%= m.score %></p>
+                </div>
+              <% } %>
+            </div>
+          </a>
+        <% }) %>
+      </div>
     </div>
-  </div>
+  </main>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -103,6 +130,22 @@
           contents.forEach(c => {
             c.classList.toggle('hidden', c.getAttribute('data-content') !== selected);
           });
+        });
+      });
+
+      const btn = document.getElementById('hamburger');
+      const menu = document.getElementById('navLinks');
+      const links = menu.querySelectorAll('a');
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 768) {
+            menu.classList.add('hidden');
+          }
         });
       });
     });
