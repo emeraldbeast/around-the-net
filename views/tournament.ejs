@@ -274,11 +274,16 @@
                 const winsB = parseInt(b.children[2].textContent.trim()) || 0;
                 const pointsA = parseInt(a.children[4].textContent.trim()) || 0;
                 const pointsB = parseInt(b.children[4].textContent.trim()) || 0;
+                const nameA = a.children[0].querySelector("span").textContent.trim();  
+                const nameB = b.children[0].querySelector("span").textContent.trim(); 
 
                 if (winsB !== winsA) {
                     return winsB - winsA;
                 }
-                return pointsB - pointsA;
+                if (pointsB!==pointsA){
+                    return pointsB - pointsA;
+                }
+                return nameA.localeCompare(nameB);
             });
 
             tbody.innerHTML = "";
