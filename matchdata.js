@@ -231,122 +231,122 @@ const matches = [
       }
     ]
   },
-  {
-    id: "match-5",
-    date:"16th January",
-    teamA: "The Untouchables",
-    teamB: "Pong Stars",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Upcoming",//Change this to Live when match starts, and Past when match end
-    submatches: [
-      {
-        game: "Singles A",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles B",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles C",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Doubles",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles D",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles E",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      }
-    ]
-  },
-  {
-    id: "match-6",
-    date:"16th January",
-    teamA: "Ball Breakers",
-    teamB: "Stardust Smashaders",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Upcoming",//Change this to Live when match starts, and Past when match end
-    submatches: [
-      {
-        game: "Singles A",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles B",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles C",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Doubles",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles D",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      },
-      {
-        game: "Singles E",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
-      }
-    ]
-  }
+  // {
+  //   id: "match-5",
+  //   date:"16th January",
+  //   teamA: "The Untouchables",
+  //   teamB: "Pong Stars",
+  //   score: "0-0",//Update this at last, when all scores are done
+  //   status: "Upcoming",//Change this to Live when match starts, and Past when match end
+  //   submatches: [
+  //     {
+  //       game: "Singles A",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles B",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles C",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Doubles",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles D",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles E",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: "match-6",
+  //   date:"16th January",
+  //   teamA: "Ball Breakers",
+  //   teamB: "Stardust Smashaders",
+  //   score: "0-0",//Update this at last, when all scores are done
+  //   status: "Upcoming",//Change this to Live when match starts, and Past when match end
+  //   submatches: [
+  //     {
+  //       game: "Singles A",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles B",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles C",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Doubles",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles D",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     },
+  //     {
+  //       game: "Singles E",
+  //       playerA: "TBA",
+  //       playerB: "TBA",
+  //       games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+  //       winner: null,
+  //       status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+  //     }
+  //   ]
+  // }
 
 ];
 
