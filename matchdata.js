@@ -217,9 +217,9 @@ const matches = [
         game: "Singles D",
         playerA: "Tanmay Rao",
         playerB: "Anvesh Mishra",
-        games: ["2-11", "11-6", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["2-11", "11-6", "5-11"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Anvesh Mishra",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -227,7 +227,7 @@ const matches = [
         playerB: "Daksh Diwakar",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },
