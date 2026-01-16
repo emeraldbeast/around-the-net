@@ -236,8 +236,8 @@ const matches = [
     date:"16th January",
     teamA: "Ball Breakers",
     teamB: "The Untouchables",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "1-4",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -268,8 +268,8 @@ const matches = [
         playerA: "Ishaan Deshpande & Aarush Nabhar",
         playerB: "Divyam Jain & Aarsh Jaiswal",
         games: ["5-11", "8-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        winner: "Divyam Jain & Aarsh Jaiswal",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -277,7 +277,7 @@ const matches = [
         playerB: "Vrishank Valecha",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -285,7 +285,7 @@ const matches = [
         playerB: "Vishnu",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },
