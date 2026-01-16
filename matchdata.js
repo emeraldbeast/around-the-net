@@ -252,8 +252,8 @@ const matches = [
         playerA: "Divy Jakhotiya",
         playerB: "Vrishank Valecha",
         games: ["9-11", "5-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        winner: "Vrishank Valecha",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles C",
@@ -261,7 +261,7 @@ const matches = [
         playerB: "Anant Saraf",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
