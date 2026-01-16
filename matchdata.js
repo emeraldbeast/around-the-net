@@ -259,9 +259,9 @@ const matches = [
         game: "Singles C",
         playerA: "Parth Shah",
         playerB: "Anant Saraf",
-        games: ["1-11", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["1-11", "7-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Anant Saraf",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
@@ -269,7 +269,7 @@ const matches = [
         playerB: "Divyam Jain & Aarsh Jaiswal",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
