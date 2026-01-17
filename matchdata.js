@@ -325,9 +325,9 @@ const matches = [
         game: "Doubles",
         playerA: "Arindam Bose & Harshwardhan Shah",
         playerB: "Daksh Diwakar & Bhavya Sarda",
-        games: ["11-7", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-7", "11-3", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Arindam Bose & Harshwardhan Shah",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -335,7 +335,7 @@ const matches = [
         playerB: "Anvesh Mishra",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
