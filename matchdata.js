@@ -350,55 +350,55 @@ const matches = [
   {
     id: "match-7",
     date:"19th January",
-    teamA: "Backhand Blitzers",
-    teamB: "High Rankers",
+    teamA: "High Rankers",
+    teamB: "Backhand Blitzers",
     score: "0-0",//Update this at last, when all scores are done
-    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    status: "Live",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Kanupriya Vyas",
+        playerB: "Khushi Mishra",
+        games: ["7-11", "7-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Khushi Mishra",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles B",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Tanmay Rao",
+        playerB: "Atharv Mehta",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles C",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Hriday Sama",
+        playerB: "Divyam Gupta",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Aadinath Keshav & Omkar Vanjari",
+        playerB: "Harshwardan Mittal & Dhananjay Bhattacharya",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Khushi Mishra",
+        playerB: "Atharv Mehta",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Tanmay Rao",
+        playerB: "Kanupriya Vyas",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
