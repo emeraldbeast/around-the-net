@@ -357,9 +357,9 @@ const matches = [
     submatches: [
       {
         game: "Singles A",
-        playerA: "Kanupriya Vyas",
-        playerB: "Khushi Mishra",
-        games: ["7-11", "7-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        playerA: "Khushi Mishra",
+        playerB: "Kanupriya Vyas",
+        games: ["11-7", "11-7", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: "Khushi Mishra",
         status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -367,7 +367,7 @@ const matches = [
         game: "Singles B",
         playerA: "Tanmay Rao",
         playerB: "Atharv Mehta",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["8-11", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
