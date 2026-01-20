@@ -409,7 +409,7 @@ const matches = [
     id: "match-8",
     date:"20th January",
     teamA: "Pong Stars",
-    teamB: "Stradust Smashaders",
+    teamB: "Stardust Smashaders",
     score: "0-0",//Update this at last, when all scores are done
     status: "Live",//Change this to Live when match starts, and Past when match end
     submatches: [
