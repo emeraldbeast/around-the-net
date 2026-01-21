@@ -468,8 +468,8 @@ const matches = [
     date:"21st January",
     teamA: "Feni Flickers",
     teamB: "Ball Breakers",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "1-4",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -499,9 +499,9 @@ const matches = [
         game: "Doubles",
         playerA: "Veer Kanakia & Jatin Vasandani",
         playerB: "Divy Jakhotiya & Aarush Nabhar",
-        games: ["11-9", "9-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-9", "9-11", "8-11"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Divy Jakhotiya & Aarush Nabhar",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -509,7 +509,7 @@ const matches = [
         playerB: "Vedang Chinhalli",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -517,7 +517,7 @@ const matches = [
         playerB: "Rishabh Jain",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   }
