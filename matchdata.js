@@ -491,9 +491,9 @@ const matches = [
         game: "Singles C",
         playerA: "Vatsal Thakkar",
         playerB: "Ishan Deshpande",
-        games: ["11-5", "9-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-5", "9-11", "7-11"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Ishan Deshpande",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
@@ -501,7 +501,7 @@ const matches = [
         playerB: "Divy Jakhotiya & Aarush Nabhar",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
