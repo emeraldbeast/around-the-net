@@ -526,8 +526,8 @@ const matches = [
     date:"25th January",
     teamA: "The Batmen",
     teamB: "Blade Runners",
-    score: "1-2",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "1-4",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -557,9 +557,9 @@ const matches = [
         game: "Doubles",
         playerA: "Aayush Khetawat & Pranjal Gangwani",
         playerB: "Daksh Diwakar & Vedaant Desai",
-        games: ["14-12", "12-14", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["14-12", "12-14", "8-11"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Daksh Diwakar & Vedaant Desai",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -567,7 +567,7 @@ const matches = [
         playerB: "Anvesh Mishra",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game ove
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game ove
       },
       {
         game: "Singles E",
@@ -575,7 +575,7 @@ const matches = [
         playerB: "Sankeert Madyalkar",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   }
