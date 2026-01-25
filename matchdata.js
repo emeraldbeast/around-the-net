@@ -541,9 +541,9 @@ const matches = [
         game: "Singles B",
         playerA: "Vidit Bhansali",
         playerB: "Anvesh Mishra",
-        games: ["4-11", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game ove
+        games: ["4-11", "11-13", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Anvesh Mishra",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game ove
       },
       {
         game: "Singles C",
@@ -551,7 +551,7 @@ const matches = [
         playerB: "Bhavya Sarda",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game ove
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game ove
       },
       {
         game: "Doubles",
