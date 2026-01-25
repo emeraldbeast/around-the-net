@@ -526,7 +526,7 @@ const matches = [
     date:"25th January",
     teamA: "The Batmen",
     teamB: "Blade Runners",
-    score: "1-0",//Update this at last, when all scores are done
+    score: "1-1",//Update this at last, when all scores are done
     status: "Live",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
@@ -549,9 +549,9 @@ const matches = [
         game: "Singles C",
         playerA: "Divyansh Gupta",
         playerB: "Bhavya Sarda",
-        games: ["9-11", "11-8", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game ove
+        games: ["9-11", "11-8", "9-11"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Bhavya Sarda",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game ove
       },
       {
         game: "Doubles",
@@ -559,7 +559,7 @@ const matches = [
         playerB: "Daksh Diwakar & Vedaant Desai",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
