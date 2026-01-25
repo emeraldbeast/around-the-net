@@ -526,16 +526,16 @@ const matches = [
     date:"25th January",
     teamA: "The Batmen",
     teamB: "Blade Runners",
-    score: "0-0",//Update this at last, when all scores are done
+    score: "1-0",//Update this at last, when all scores are done
     status: "Live",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
         playerA: "Aditya Sahoo",
         playerB: "Sankeert Madyalkar",
-        games: ["11-2", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game ove
+        games: ["11-2", "11-1", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Aditya Sahoo",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game ove
       },
       {
         game: "Singles B",
@@ -543,7 +543,7 @@ const matches = [
         playerB: "Anvesh Mishra",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game ove
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game ove
       },
       {
         game: "Singles C",
