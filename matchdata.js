@@ -582,8 +582,8 @@ const matches = [
   {
     id: "match-11",
     date:"28th January",
-    teamA: "The Batmen",
-    teamB: "Blade Runners",
+    teamA: "Pong Stars",
+    teamB: "The Untouchables",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
