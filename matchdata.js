@@ -582,10 +582,10 @@ const matches = [
   {
     id: "match-11",
     date:"28th January",
-    teamA: "Pong Stars",
-    teamB: "The Untouchables",
+    teamA: "The Untouchables",
+    teamB: "Pong Stars",
     score: "0-0",//Update this at last, when all scores are done
-    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    status: "Live",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
