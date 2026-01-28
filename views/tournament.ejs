@@ -212,7 +212,7 @@
                 </table>
             </div>
         </div>
-        
+
         <div class="flex mt-6 justify-center">
             <div
                 class="max-w-lg p-6 border-2 border-white/30 rounded-lg shadow-lg bg-black/30 backdrop-blur-md text-center">
@@ -243,6 +243,7 @@
                 }
             });
         });
+
         const groupAButton = document.getElementById("groupAButton");
         const groupBButton = document.getElementById("groupBButton");
         const slider = document.getElementById("slider");
@@ -275,20 +276,19 @@
                 const winsB = parseInt(b.children[2].textContent.trim()) || 0;
                 const pointsA = parseInt(a.children[4].textContent.trim()) || 0;
                 const pointsB = parseInt(b.children[4].textContent.trim()) || 0;
-                const nameA = a.children[0].querySelector("span").textContent.trim();  
-                const nameB = b.children[0].querySelector("span").textContent.trim(); 
+                const nameA = a.children[0].querySelector("span").textContent.trim();
+                const nameB = b.children[0].querySelector("span").textContent.trim();
 
-                if (winsB !== winsA) {
-                    return winsB - winsA;
-                }
-                if (pointsB!==pointsA){
-                    return pointsB - pointsA;
-                }
+                if (winsB !== winsA) return winsB - winsA;
+                if (pointsB !== pointsA) return pointsB - pointsA;
                 return nameA.localeCompare(nameB);
             });
 
             tbody.innerHTML = "";
-            rows.forEach(row => tbody.appendChild(row));
+
+            rows.forEach((row, index) => {
+                tbody.appendChild(row);
+            });
         }
 
         window.addEventListener("DOMContentLoaded", () => {
