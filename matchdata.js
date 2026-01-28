@@ -621,7 +621,7 @@ const matches = [
       },
       {
         game: "Singles D",
-        playerA: "TBA",
+        playerA: "Siddhant Bhutani",
         playerB: "Mihir Kulkarni",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
@@ -629,7 +629,7 @@ const matches = [
       },
       {
         game: "Singles E",
-        playerA: "TBA",
+        playerA: "Aarsh Jaiswal",
         playerB: "Arya Jain",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
