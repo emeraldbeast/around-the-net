@@ -584,8 +584,8 @@ const matches = [
     date:"28th January",
     teamA: "The Untouchables",
     teamB: "Pong Stars",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "0-5",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
