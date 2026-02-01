@@ -95,7 +95,8 @@ const teams = [
       {name: "Ishan Deshpande", price: 200000},
       {name: "Rishabh Jain", price: 75000},
       {name: "Owais Ahmed", price: 125000},
-      {name: "Parth Shah", price: 25000}
+      {name: "Parth Shah", price: 25000},
+      {name: "Antonio Derick",price: 25000}
     ]
   },
   {
