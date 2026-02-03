@@ -755,7 +755,7 @@ const matches = [
   },
   {
     id: "match-14",
-    date:"4th February",
+    date:"3rd February",
     teamA: "Stardust Smashaders",
     teamB: "The Untouchables",
     score: "0-0",//Update this at last, when all scores are done
