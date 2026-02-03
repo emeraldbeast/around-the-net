@@ -640,55 +640,55 @@ const matches = [
   {
     id: "match-12",
     date:"3rd February",
-    teamA: "Ball Breakers",
-    teamB: "Pong Stars",
+    teamA: "Pong Stars",
+    teamB: "Ball Breakers",
     score: "0-0",//Update this at last, when all scores are done
-    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    status: "Live",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Mihir Kulkarni",
+        playerB: "Ishan Deshpande",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles B",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Arya Jain",
+        playerB: "Derick Antonio",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles C",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Prasham Bhayani",
+        playerB: "Priyanshu Jain",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Pranav Narayan & Vedang Krishna",
+        playerB: "Aarush Nabhar & Divy Jakothiya",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Mihir Kulkarni",
+        playerB: "Derick Antonio",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Arya Jain",
+        playerB: "Ishan Deshpande",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
