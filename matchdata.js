@@ -815,7 +815,7 @@ const matches = [
     id: "match-15",
     date:"TBA",
     teamA: "The Batmen",
-    teamB: "Sancoale Smashers",
+    teamB: "High Rankers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
@@ -873,7 +873,7 @@ const matches = [
     id: "match-16",
     date:"TBA",
     teamA: "The Batmen",
-    teamB: "High Rankers",
+    teamB: "Sancoale Smashers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
