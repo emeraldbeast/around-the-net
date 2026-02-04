@@ -847,9 +847,9 @@ const matches = [
         game: "Doubles",
         playerA: "Aayush Khetawat & Pranjal Gangwani",
         playerB: "Omkar Vanjari & Aadinath Keshav",
-        games: ["8-11", "14-12", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["8-11", "14-12", "13-15"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Omkar Vanjari & Aadinath Keshav",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -857,7 +857,7 @@ const matches = [
         playerB: "Tanmay Rao",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -865,7 +865,7 @@ const matches = [
         playerB: "Hriday Sama",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },//15
