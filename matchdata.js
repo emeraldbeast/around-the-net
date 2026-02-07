@@ -1162,8 +1162,8 @@ const matches = [
   {
     id: "eliminator-1",
     date:"TBA",
-    teamA: "A2",
-    teamB: "B3",
+    teamA: "A3",
+    teamB: "B2",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
@@ -1220,8 +1220,8 @@ const matches = [
   {
     id: "eliminator-2",
     date:"TBA",
-    teamA: "B2",
-    teamB: "A3",
+    teamA: "B3",
+    teamB: "A2",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
