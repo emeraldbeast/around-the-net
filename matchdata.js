@@ -868,7 +868,7 @@ const matches = [
         status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
-  },//15
+  },
   {
     id: "match-16",
     date:"TBA",
@@ -1158,7 +1158,297 @@ const matches = [
         status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
-  }//20
+  },//20
+  {
+    id: "eliminator-1",
+    date:"TBA",
+    teamA: "A2",
+    teamB: "B3",
+    score: "0-0",//Update this at last, when all scores are done
+    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    submatches: [
+      {
+        game: "Singles A",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles B",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles C",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Doubles",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles D",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles E",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      }
+    ]
+  },//e1
+  {
+    id: "eliminator-2",
+    date:"TBA",
+    teamA: "B2",
+    teamB: "A3",
+    score: "0-0",//Update this at last, when all scores are done
+    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    submatches: [
+      {
+        game: "Singles A",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles B",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles C",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Doubles",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles D",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles E",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      }
+    ]
+  },//e2
+  {
+    id: "semifinal-1",
+    date:"TBA",
+    teamA: "A1",
+    teamB: "Winner of Eliminator 1",
+    score: "0-0",//Update this at last, when all scores are done
+    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    submatches: [
+      {
+        game: "Singles A",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles B",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles C",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Doubles",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles D",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles E",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      }
+    ]
+  },//sf1
+  {
+    id: "semifinal-2",
+    date:"TBA",
+    teamA: "B1",
+    teamB: "Winner of Eliminator 2",
+    score: "0-0",//Update this at last, when all scores are done
+    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    submatches: [
+      {
+        game: "Singles A",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles B",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles C",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Doubles",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles D",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles E",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      }
+    ]
+  },//sf2
+  {
+    id: "final",
+    date:"TBA",
+    teamA: "Winner of SF1",
+    teamB: "Winner of SF2",
+    score: "0-0",//Update this at last, when all scores are done
+    status: "Upcoming",//Change this to Live when match starts, and Past when match end
+    submatches: [
+      {
+        game: "Singles A",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles B",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles C",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Doubles",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles D",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      },
+      {
+        game: "Singles E",
+        playerA: "TBA",
+        playerB: "TBA",
+        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: null,
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+      }
+    ]
+  }//final
   
 ];
 
