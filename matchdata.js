@@ -871,9 +871,9 @@ const matches = [
   },
   {
     id: "match-16",
-    date:"TBA",
-    teamA: "The Batmen",
-    teamB: "Sancoale Smashers",
+    date:"12th February",
+    teamA: "Feni Flickers",
+    teamB: "The Untouchables",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
@@ -1046,8 +1046,8 @@ const matches = [
   {
     id: "match-19",
     date:"TBA",
-    teamA: "Feni Flickers",
-    teamB: "The Untouchables",
+    teamA: "The Batmen",
+    teamB: "Sancoale Smashers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
