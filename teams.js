@@ -87,7 +87,7 @@ const teams = [
     name: "Ball Breakers",
     logo: "/logos/bal-bre.png",
     owner: "Priyanshu Jain",
-    captain: "Vedang Chinhalli",
+    captain: "Vedang Chinhalli/Antonio Derick",
     players: [
       {name: "Vedang Chinhalli/Antonio Derick", price: 2600000},
       {name: "Divy Jakhotiya", price: 475000},
