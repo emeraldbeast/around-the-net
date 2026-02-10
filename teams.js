@@ -89,14 +89,13 @@ const teams = [
     owner: "Priyanshu Jain",
     captain: "Vedang Chinhalli",
     players: [
-      {name: "Vedang Chinhalli", price: 2600000},
+      {name: "Vedang Chinhalli/Antonio Derick", price: 2600000},
       {name: "Divy Jakhotiya", price: 475000},
       {name: "Aarush Nabar",price:500000},
       {name: "Ishan Deshpande", price: 200000},
       {name: "Rishabh Jain", price: 75000},
       {name: "Owais Ahmed", price: 125000},
-      {name: "Parth Shah", price: 25000},
-      {name: "Antonio Derick",price: 25000}
+      {name: "Parth Shah", price: 25000}
     ]
   },
   {
