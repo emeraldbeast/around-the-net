@@ -305,7 +305,7 @@
             rows.forEach((row, index) => { 
                 const teamName = row.children[1].querySelector("span").textContent.trim();
                 if (tabletoppers.includes(teamName)) {
-                    row.children[0].textContent = "T"; 
+                    row.children[0].textContent = "Q"; 
                     row.classList.add("bg-gradient-to-r", "from-yellow-400", "to-yellow-600", "text-black", "font-bold");
                 }
                 else if (qualified.includes(teamName)) {
