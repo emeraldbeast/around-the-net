@@ -926,7 +926,7 @@ const matches = [
         status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
-  },//16
+  },
   {
     id: "match-17",
     date:"TBA",

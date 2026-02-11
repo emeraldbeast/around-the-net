@@ -87,10 +87,10 @@
                                     class="w-8 h-8 rounded-full border border-yellow-300">
                                 <span>Pong Stars</span>
                             </td>
+                            <td class="px-2 py-3 text-center">4</td>
                             <td class="px-2 py-3 text-center">3</td>
-                            <td class="px-2 py-3 text-center">3</td>
-                            <td class="px-2 py-3 text-center">0</td>
-                            <td class="px-2 py-3 text-center">8</td>
+                            <td class="px-2 py-3 text-center">1</td>
+                            <td class="px-2 py-3 text-center">7</td>
                         </tr>
                         <tr>
                             <td class="px-2 py-3 text-center pos-cell font-bold">1</td>
@@ -135,10 +135,10 @@
                                     class="w-8 h-8 rounded-full border border-yellow-300">
                                 <span>Feni Flickers</span>
                             </td>
+                            <td class="px-2 py-3 text-center">3</td>
                             <td class="px-2 py-3 text-center">2</td>
                             <td class="px-2 py-3 text-center">1</td>
-                            <td class="px-2 py-3 text-center">1</td>
-                            <td class="px-2 py-3 text-center">-2</td>
+                            <td class="px-2 py-3 text-center">-1</td>
                         </tr>
                     </tbody>
                 </table>
@@ -282,6 +282,7 @@
 
         function sortLeaderboardByPoints(tableId) {
             qualified = ["Sancoale Smashers","Pong Stars","High Rankers"];
+            tabletoppers = ["Pong Stars"]
             const table = document.querySelector(`#${tableId} table`);
             const tbody = table.querySelector("tbody");
             const rows = Array.from(tbody.querySelectorAll("tr"));
@@ -303,7 +304,11 @@
 
             rows.forEach((row, index) => { 
                 const teamName = row.children[1].querySelector("span").textContent.trim();
-                if (qualified.includes(teamName)) {
+                if (tabletoppers.includes(teamName)) {
+                    row.children[0].textContent = "T"; 
+                    row.classList.add("bg-gradient-to-r", "from-yellow-400", "to-yellow-600", "text-black", "font-bold");
+                }
+                else if (qualified.includes(teamName)) {
                     row.children[0].textContent = "Q"; 
                     row.classList.add("bg-green-700", "text-white");
                 }
