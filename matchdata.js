@@ -921,9 +921,9 @@ const matches = [
         game: "Singles E",
         playerA: "Veer Kanakia",
         playerB: "Arya Jain",
-        games: ["11-7", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-7", "11-8", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Veer Kanakia",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },//16
