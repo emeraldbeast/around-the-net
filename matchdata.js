@@ -1278,7 +1278,7 @@ const matches = [
   {
     id: "semifinal-1",
     date:"TBA",
-    teamA: "A1",
+    teamA: "Pong Stars",
     teamB: "Winner of Eliminator 1",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
