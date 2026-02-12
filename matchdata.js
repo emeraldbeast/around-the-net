@@ -929,9 +929,9 @@ const matches = [
   },
   {
     id: "match-17",
-    date:"TBA",
-    teamA: "Blade Runners",
-    teamB: "Backhand Blitzers",
+    date:"13th February",
+    teamA: "The Batmen",
+    teamB: "Sancoale Smashers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
@@ -987,9 +987,9 @@ const matches = [
   },//17
   {
     id: "match-18",
-    date:"TBA",
-    teamA: "The Untouchables",
-    teamB: "Feni Flickers",
+    date:"15th February",
+    teamA: "Stardust Smashaders",
+    teamB: "Ball Breakers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
@@ -1045,9 +1045,9 @@ const matches = [
   },//18
   {
     id: "match-19",
-    date:"TBA",
-    teamA: "The Batmen",
-    teamB: "Sancoale Smashers",
+    date:"16th February",
+    teamA: "Blade Runners",
+    teamB: "Backhand Blitzers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
@@ -1103,9 +1103,9 @@ const matches = [
   },//19
   {
     id: "match-20",
-    date:"TBA",
-    teamA: "Stardust Smashaders",
-    teamB: "Ball Breakers",
+    date:"16th February",
+    teamA: "The Untouchables",
+    teamB: "Feni Flickers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
