@@ -192,10 +192,10 @@
                                     class="w-8 h-8 rounded-full border border-yellow-300">
                                 <span>The Batmen</span>
                             </td>
-                            <td class="px-2 py-3 text-center">3</td>
+                            <td class="px-2 py-3 text-center">4</td>
                             <td class="px-2 py-3 text-center">0</td>
-                            <td class="px-2 py-3 text-center">3</td>
-                            <td class="px-2 py-3 text-center">-7</td>
+                            <td class="px-2 py-3 text-center">4</td>
+                            <td class="px-2 py-3 text-center">-8</td>
                         </tr>
                         <tr>
                             <td class="px-2 py-3 text-center pos-cell font-bold">1</td>
@@ -216,10 +216,10 @@
                                     class="w-8 h-8 rounded-full border border-yellow-300">
                                 <span>Sancoale Smashers</span>
                             </td>
-                            <td class="px-2 py-3 text-center">3</td>
-                            <td class="px-2 py-3 text-center">3</td>
+                            <td class="px-2 py-3 text-center">4</td>
+                            <td class="px-2 py-3 text-center">4</td>
                             <td class="px-2 py-3 text-center">0</td>
-                            <td class="px-2 py-3 text-center">8</td>
+                            <td class="px-2 py-3 text-center">9</td>
                         </tr>
                     </tbody>
                 </table>
@@ -282,7 +282,7 @@
 
         function sortLeaderboardByPoints(tableId) {
             qualified = ["Sancoale Smashers","Pong Stars","High Rankers"];
-            tabletoppers = ["Pong Stars"]
+            tabletoppers = ["Pong Stars","Sancoale Smashers"]; 
             const table = document.querySelector(`#${tableId} table`);
             const tbody = table.querySelector("tbody");
             const rows = Array.from(tbody.querySelectorAll("tr"));
