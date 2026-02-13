@@ -984,10 +984,10 @@ const matches = [
         status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
-  },//17
+  },
   {
     id: "match-18",
-    date:"15th February",
+    date:"14th February",
     teamA: "Stardust Smashaders",
     teamB: "Ball Breakers",
     score: "0-0",//Update this at last, when all scores are done
