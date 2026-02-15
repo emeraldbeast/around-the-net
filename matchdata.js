@@ -1021,9 +1021,9 @@ const matches = [
         game: "Doubles",
         playerA: "Divy Jakhotiya & Aarush Nabhar",
         playerB: "Abhinav Padhi & Animesh Gaonkar",
-        games: ["7-11", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["7-11", "8-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Abhinav Padhi & Animesh Gaonkar",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -1031,7 +1031,7 @@ const matches = [
         playerB: "Shrish Lohiya",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
