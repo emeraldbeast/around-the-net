@@ -990,8 +990,8 @@ const matches = [
     date:"15th February",
     teamA: "Ball Breakers",
     teamB: "Stardust Smashaders",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "2-4",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -1029,9 +1029,9 @@ const matches = [
         game: "Singles D",
         playerA: "Derick Antonio",
         playerB: "Shrish Lohiya",
-        games: ["9-11", "11-4", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["9-11", "11-4", "8-11"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Shrish Lohiya",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -1039,7 +1039,7 @@ const matches = [
         playerB: "Ammar Abdul Azeez",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },//18
