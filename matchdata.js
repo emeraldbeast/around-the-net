@@ -1100,7 +1100,7 @@ const matches = [
         status: "Did Not Play"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
-  },//19
+  },
   {
     id: "match-20",
     date:"17th February",
@@ -1220,7 +1220,7 @@ const matches = [
   {
     id: "eliminator-2",
     date:"TBA",
-    teamA: "B3",
+    teamA: "Backhand Blitzers",
     teamB: "A2",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
