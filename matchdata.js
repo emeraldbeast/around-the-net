@@ -1057,7 +1057,7 @@ const matches = [
         playerB: "Aditya Ambrish",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles B",
@@ -1081,7 +1081,7 @@ const matches = [
         playerB: "Daksh Diwakar & Vedaant Desai",
         games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
