@@ -1106,8 +1106,8 @@ const matches = [
     date:"26th February",
     teamA: "Feni Flickers",
     teamB: "The Untouchables",
-    score: "0-0",//Update this at last, when all scores are done
-    status: "Live",//Change this to Live when match starts, and Past when match end
+    score: "4-3",//Update this at last, when all scores are done
+    status: "Past",//Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -1145,24 +1145,24 @@ const matches = [
         game: "Singles D",
         playerA: "Veer Kanakia",
         playerB: "Aarsh Jaiswal",
-        games: ["11-8", "9-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-8", "9-11", "11-7"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Veer Kanakia",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
         playerA: "Aarush Goyal",
         playerB: "Siddhant Bhutani",
-        games: ["-", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["0-0", "0-0", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Aarush Goyal",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       }
     ]
   },
   {
     id: "eliminator-1",
     date:"TBA",
-    teamA: "A3",
+    teamA: "Stardust Smashaders",
     teamB: "High Rankers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
@@ -1221,7 +1221,7 @@ const matches = [
     id: "eliminator-2",
     date:"TBA",
     teamA: "Backhand Blitzers",
-    teamB: "A2",
+    teamB: "Feni Flickers",
     score: "0-0",//Update this at last, when all scores are done
     status: "Upcoming",//Change this to Live when match starts, and Past when match end
     submatches: [
