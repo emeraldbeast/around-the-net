@@ -1137,9 +1137,9 @@ const matches = [
         game: "Doubles",
         playerA: "Jatin Vasandani & Rishabh Sahay",
         playerB: "Vrishank Valecha & Divyam Jain",
-        games: ["5-11", "-", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing"//Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["5-11", "7-11", "-"],//When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Vrishank Valecha & Divyam Jain",
+        status: "Completed"//Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
