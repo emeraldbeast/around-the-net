@@ -1165,7 +1165,7 @@ const matches = [
     teamA: "High Rankers",
     teamB: "Stardust Smashaders",
     score: "2-4", //Update this at last, when all scores are done
-    status: "Live", //Change this to Live when match starts, and Past when match end
+    status: "Past", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
