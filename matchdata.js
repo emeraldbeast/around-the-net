@@ -1164,7 +1164,7 @@ const matches = [
     date: "13th April",
     teamA: "High Rankers",
     teamB: "Stardust Smashaders",
-    score: "2-1", //Update this at last, when all scores are done
+    score: "2-3", //Update this at last, when all scores are done
     status: "Live", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
@@ -1195,9 +1195,9 @@ const matches = [
         game: "Doubles",
         playerA: "Omkar Vanjari & Aadinath Keshav",
         playerB: "Animesh Gaonkar & Abhinav Padhi",
-        games: ["8-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["8-11", "6-11", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Animesh Gaonkar & Abhinav Padhi",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
@@ -1205,7 +1205,7 @@ const matches = [
         playerB: "Ammar Abdul Azeez",
         games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
