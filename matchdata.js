@@ -1164,7 +1164,7 @@ const matches = [
     date: "13th April",
     teamA: "High Rankers",
     teamB: "Stardust Smashaders",
-    score: "2-3", //Update this at last, when all scores are done
+    score: "2-4", //Update this at last, when all scores are done
     status: "Live", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
@@ -1204,8 +1204,8 @@ const matches = [
         playerA: "Khushi Mishra",
         playerB: "Ammar Abdul Azeez",
         games: ["5-11", "5-11", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
+        winner: "Ammar Abdul Azeez",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
