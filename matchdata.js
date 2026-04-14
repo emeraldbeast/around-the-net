@@ -1213,13 +1213,13 @@ const matches = [
         playerB: "Shrish Lohiya",
         games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, //e1
+  }, 
   {
     id: "eliminator-2",
-    date: "TBA",
+    date: "16th April",
     teamA: "Backhand Blitzers",
     teamB: "Feni Flickers",
     score: "0-0", //Update this at last, when all scores are done
@@ -1279,7 +1279,7 @@ const matches = [
     id: "semifinal-1",
     date: "TBA",
     teamA: "Pong Stars",
-    teamB: "Winner of Eliminator 1",
+    teamB: "Stardust Smashaders",
     score: "0-0", //Update this at last, when all scores are done
     status: "Upcoming", //Change this to Live when match starts, and Past when match end
     submatches: [
