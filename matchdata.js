@@ -1222,8 +1222,8 @@ const matches = [
     date: "16th April",
     teamA: "Backhand Blitzers",
     teamB: "Feni Flickers",
-    score: "0-0", //Update this at last, when all scores are done
-    status: "Live", //Change this to Live when match starts, and Past when match end
+    score: "4-2", //Update this at last, when all scores are done
+    status: "Past", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -1261,9 +1261,9 @@ const matches = [
         game: "Singles D",
         playerA: "Vaidik Srivastava",
         playerB: "Aarush Goyal",
-        games: ["11-7", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["11-7", "11-8", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Vaidik Srivastava",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -1271,10 +1271,10 @@ const matches = [
         playerB: "Veer Kanakia",
         games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, //e2
+  }, 
   {
     id: "semifinal-1",
     date: "TBA",
