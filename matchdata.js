@@ -1277,7 +1277,7 @@ const matches = [
   }, 
   {
     id: "semifinal-1",
-    date: "TBA",
+    date: "19th April",
     teamA: "Pong Stars",
     teamB: "Stardust Smashaders",
     score: "0-0", //Update this at last, when all scores are done
@@ -1335,9 +1335,9 @@ const matches = [
   }, //sf1
   {
     id: "semifinal-2",
-    date: "TBA",
+    date: "20th April",
     teamA: "Sancoale Smashers",
-    teamB: "Winner of Eliminator 2",
+    teamB: "Backhand Blitzers",
     score: "0-0", //Update this at last, when all scores are done
     status: "Upcoming", //Change this to Live when match starts, and Past when match end
     submatches: [
