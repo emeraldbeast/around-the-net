@@ -1345,7 +1345,7 @@ const matches = [
         game: "Singles A",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1353,7 +1353,7 @@ const matches = [
         game: "Singles B",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1361,7 +1361,7 @@ const matches = [
         game: "Singles C",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1369,7 +1369,7 @@ const matches = [
         game: "Doubles",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1377,7 +1377,7 @@ const matches = [
         game: "Singles D",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1385,7 +1385,7 @@ const matches = [
         game: "Singles E",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1403,7 +1403,7 @@ const matches = [
         game: "Singles A",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1411,7 +1411,7 @@ const matches = [
         game: "Singles B",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1419,7 +1419,7 @@ const matches = [
         game: "Singles C",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1427,7 +1427,7 @@ const matches = [
         game: "Doubles",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1435,7 +1435,7 @@ const matches = [
         game: "Singles D",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
@@ -1443,7 +1443,7 @@ const matches = [
         game: "Singles E",
         playerA: "TBA",
         playerB: "TBA",
-        games: ["-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
