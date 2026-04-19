@@ -1332,7 +1332,7 @@ const matches = [
         status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, //sf1
+  }, 
   {
     id: "semifinal-2",
     date: "20th April",
