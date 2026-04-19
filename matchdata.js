@@ -1280,8 +1280,8 @@ const matches = [
     date: "19th April",
     teamA: "Stardust Smashaders",
     teamB: "Pong Stars",
-    score: "0-0", //Update this at last, when all scores are done
-    status: "Live", //Change this to Live when match starts, and Past when match end
+    score: "2-4", //Update this at last, when all scores are done
+    status: "Past", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
@@ -1319,9 +1319,9 @@ const matches = [
         game: "Singles D",
         playerA: "Ammar Abdul Azeez",
         playerB: "Mihir Kulkarni",
-        games: ["6-11", "9-11", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["6-11", "9-11", "9-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Mihir Kulkarni",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -1329,7 +1329,7 @@ const matches = [
         playerB: "Pranav Narayan",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
   }, //sf1
@@ -1394,7 +1394,7 @@ const matches = [
   {
     id: "final",
     date: "TBA",
-    teamA: "Winner of SF1",
+    teamA: "Pong Stars",
     teamB: "Winner of SF2",
     score: "0-0", //Update this at last, when all scores are done
     status: "Upcoming", //Change this to Live when match starts, and Past when match end
