@@ -1335,7 +1335,7 @@ const matches = [
   }, 
   {
     id: "semifinal-2",
-    date: "20th April",
+    date: "25th April",
     teamA: "Sancoale Smashers",
     teamB: "Backhand Blitzers",
     score: "0-0", //Update this at last, when all scores are done
@@ -1393,7 +1393,7 @@ const matches = [
   }, //sf2
   {
     id: "final",
-    date: "TBA",
+    date: "26th April",
     teamA: "Pong Stars",
     teamB: "Winner of SF2",
     score: "0-0", //Update this at last, when all scores are done
