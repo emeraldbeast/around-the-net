@@ -1216,7 +1216,7 @@ const matches = [
         status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, 
+  },
   {
     id: "eliminator-2",
     date: "16th April",
@@ -1274,7 +1274,7 @@ const matches = [
         status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, 
+  },
   {
     id: "semifinal-1",
     date: "19th April",
@@ -1332,62 +1332,62 @@ const matches = [
         status: "Did Not Play", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, 
+  },
   {
     id: "semifinal-2",
     date: "25th April",
     teamA: "Sancoale Smashers",
     teamB: "Backhand Blitzers",
-    score: "0-0", //Update this at last, when all scores are done
-    status: "Upcoming", //Change this to Live when match starts, and Past when match end
+    score: "4-3", //Update this at last, when all scores are done
+    status: "Past", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Shreyash",
+        playerB: "Vaidik",
+        games: ["5-11", "6-11", "6-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Vaidik",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles B",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Koushal",
+        playerB: "Atharv",
+        games: ["5-11", "4-11", "6-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Atharv",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles C",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Arindam",
+        playerB: "Kanupriya",
+        games: ["9-11", "11-8", "11-9", "11-9", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Arindam",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Harshwardhan & Aryan",
+        playerB: "Harshwardhan & Divyam",
+        games: ["11-6", "11-5", "7-11", "11-3", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Harshwardhan & Aryan",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Koushal",
+        playerB: "Vaidik",
+        games: ["5-11", "6-11", "7-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Vaidik",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
-        playerA: "TBA",
-        playerB: "TBA",
-        games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        playerA: "Shreyash",
+        playerB: "Atharv",
+        games: ["11-9", "3-11", "12-10", "11-8", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Shreyash",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
   }, //sf2
