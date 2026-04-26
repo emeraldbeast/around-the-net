@@ -1435,9 +1435,9 @@ const matches = [
         game: "Singles D",
         playerA: "Nachiket Khandekar",
         playerB: "Mihir Kulkarni",
-        games: ["8-11", "6-11", "11-8", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["8-11", "6-11", "11-8", "7-11", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Mihir Kulkarni",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
@@ -1445,7 +1445,7 @@ const matches = [
         playerB: "Prasham Bhayani",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
   },
