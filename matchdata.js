@@ -1419,9 +1419,9 @@ const matches = [
         game: "Singles C",
         playerA: "Aryan Gagare",
         playerB: "Arya Jain",
-        games: ["6-11", "11-4", "7-11", "11-9", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
-        winner: null,
-        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
+        games: ["6-11", "11-4", "7-11", "11-9", "8-11"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        winner: "Arya Jain",
+        status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
@@ -1429,7 +1429,7 @@ const matches = [
         playerB: "Pranav Narayan & Vedang Krishna",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
