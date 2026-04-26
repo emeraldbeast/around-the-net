@@ -36,7 +36,7 @@
                 class="text-yellow-100 bg-gray-500 px-4 py-2 rounded hover:bg-gray-700 transition">☰</button>
         </div>
         <ul id="navLinks"
-            class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4 
+            class="hidden flex-col absolute top-[70px] right-8 bg-zinc-600 px-6 py-4 rounded text-yellow-100 space-y-4
              md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:rounded md:shadow-none">
             <li>
                 <a href="/"
@@ -94,10 +94,20 @@
                             <%= player.name %>
                         </td>
                         <td class="px-4 py-3 text-center font-medium">
-                            <%= player.price>= 1000000
-                                ? (player.price / 1000000).toFixed(2).replace(/\.00$/, '') + 'M'
-                                : (player.price / 1000).toFixed(0) + 'k' %>
-                        </td>
+    <%
+        const price = Number(player.price);
+        let priceDisplay;
+
+        if (isNaN(price)) {
+            priceDisplay = "Replacement";
+        } else if (price >= 1000000) {
+            priceDisplay = (price / 1000000).toFixed(2).replace(/\.00$/, '') + 'M';
+        } else {
+            priceDisplay = (price / 1000).toFixed(0) + 'k';
+        }
+    %>
+    <%= priceDisplay %>
+</td>
                         <td class="px-4 py-3 font-semibold text-left whitespace-nowrap">
                             <div class="inline-flex items-center space-x-3">
                                 <img src="<%= player.teamLogo %>" alt="Team Logo"
