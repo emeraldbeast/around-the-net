@@ -1443,7 +1443,7 @@ const matches = [
         game: "Singles E",
         playerA: "Arindam Bose",
         playerB: "Prasham Bhayani",
-        games: ["8-11", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
+        games: ["8-11", "11-9", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
