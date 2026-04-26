@@ -1390,65 +1390,65 @@ const matches = [
         status: "Completed", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, //sf2
+  },
   {
     id: "final",
     date: "26th April",
-    teamA: "Pong Stars",
-    teamB: "Sancoale Smashers",
+    teamA: "Sancoale Smashers",
+    teamB: "Pong Stars",
     score: "0-0", //Update this at last, when all scores are done
-    status: "Upcoming", //Change this to Live when match starts, and Past when match end
+    status: "Live", //Change this to Live when match starts, and Past when match end
     submatches: [
       {
         game: "Singles A",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Nachiket Khandekar",
+        playerB: "Prasham Bhayani",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
-        status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
+        status: "Ongoing", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles B",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Arindam Bose",
+        playerB: "Mihir Kulkarni",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles C",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Aryan Gagare",
+        playerB: "Arya Jain",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Doubles",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Shreyash Narayanan & Harshwardhan Shah",
+        playerB: "Pranav Narayan & Vedang Krishna",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles D",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Nachiket Khandekar",
+        playerB: "Mihir Kulkarni",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
       {
         game: "Singles E",
-        playerA: "TBA",
-        playerB: "TBA",
+        playerA: "Arindam Bose",
+        playerB: "Prasham Bhayani",
         games: ["-", "-", "-", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: null,
         status: "Upcoming", //Change this to Ongoing, when game starts, then change to Completed when game over
       },
     ],
-  }, //final
+  },
 ];
 
 module.exports = matches;
