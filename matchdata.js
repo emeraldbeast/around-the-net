@@ -1351,7 +1351,7 @@ const matches = [
       },
       {
         game: "Singles B",
-        playerA: "Koushal",
+        playerA: "Koushal Agarwal",
         playerB: "Atharv Mehta",
         games: ["5-11", "4-11", "6-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: "Atharv Mehta",
@@ -1375,7 +1375,7 @@ const matches = [
       },
       {
         game: "Singles D",
-        playerA: "Koushal",
+        playerA: "Koushal Agarwal",
         playerB: "Vaidik Srivastava",
         games: ["5-11", "6-11", "7-11", "-", "-"], //When Match starts, replace Scheduled with - - -, and then keep adding scores
         winner: "Vaidik",
